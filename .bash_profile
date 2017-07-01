@@ -30,7 +30,7 @@ export TERM="xterm-color"
 alias ls="ls -G"
 export PROMPT="e[1;30m][e[e[1;30m]e[1;33m] u@H [e[1;32m]w[e[0m] e[1;30m]]n[[ e[1;31m]T[e[0m]e[1;30m] ] &gt; e[37m]"
 
-#[ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
+[ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
@@ -44,7 +44,7 @@ export GOROOT="/usr/local/opt/go/libexec"
 export GOPATH="/Users/pankajdoharey/Development/go"
 export PATH="$GOPATH/bin:$PATH"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 alias aws_connect="ssh -i ~/.ssh/MyKeyPairpem.pem ubuntu@54.169.238.96"
 alias cljs="java -cp ~/.cljs/cljs.jar:src clojure.main"export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
