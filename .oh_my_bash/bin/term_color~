@@ -1,0 +1,6 @@
+term_color(){ 
+		for i in {0..255} ; do
+		    printf "\x1b[38;5;${i}m";
+		    printf "\\x1b\[38;5;${i}m \t";
+		done 
+}

@@ -1,0 +1,327 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/pankajdoharey/.emacs.d/elpa/" . "gratuitous-dark-theme-1.3/")
+ ("/Users/pankajdoharey/.lein/" . "self-installs/")
+ ("/Users/pankajdoharey/Development/mycv/" . "layout/")
+ ("/Users/pankajdoharey/Development/codemismatch.github.io/source/" . "stylesheets/")
+ ("/Users/pankajdoharey/Development/codemismatch.github.io/" . "source/")
+ ("/Users/pankajdoharey/Development/challenge/" . "db/")
+ ("/Users/pankajdoharey/Development/metacritical.github.io/ancient/" . "assets/")
+ ("/Users/pankajdoharey/Development/metacritical.github.io/articles/" . "drafts/")
+ ("/Users/pankajdoharey/Development/metacritical.github.io/" . "ancient/")
+ ("/Users/pankajdoharey/Development/Phaser/bouncy/src/" . "ts/")
+ ("/Users/pankajdoharey/Development/Phaser/bouncy/" . "src/")
+ ("/Users/pankajdoharey/Development/Phaser/" . "bouncy/")
+ ("/Users/pankajdoharey/Development/Soft3DEngine/js/" . "app/")
+ ("/Users/pankajdoharey/Development/Soft3DEngine/" . "js/")
+ ("/Users/pankajdoharey/Development/Radish/" . "lib/")
+ ("/Users/pankajdoharey/Development/WebGL/three.js/src/" . "loaders/")
+ ("/Users/pankajdoharey/Development/WebGL/three.js/" . "src/")
+ ("/Users/pankajdoharey/Development/WebGL/threejs_tests/bower_components/threejs/" . "build/")
+ ("/Users/pankajdoharey/Development/WebGL/threejs_tests/bower_components/" . "threejs/")
+ ("/Users/pankajdoharey/Development/WebGL/TriggerRally/" . "server/")
+ ("/Users/pankajdoharey/Development/WebGL/HexGL/" . "bkcore/")
+ ("/Users/pankajdoharey/Development/WebGL/threejs_tests/" . "bower_components/")
+ ("/Users/pankajdoharey/Development/WebGL/" . "three.js/")
+ ("/Users/pankajdoharey/Development/Mudmonk/" . "OldCode/")
+ ("/Users/pankajdoharey/.oh_my_bash/" . "libs/")
+ ("/Users/pankajdoharey/Development/python/" . "featurist/")
+ ("/Users/pankajdoharey/Development/clojure/clojureintro/src/" . "clojureintro/")
+ ("/Users/pankajdoharey/Development/clojure/clojureintro/" . "src/")
+ ("/Users/pankajdoharey/Development/emacs/" . "src/")
+ ("/Users/pankajdoharey/Development/clojure/rock-paper-scissors-lizard-spock/src/" . "rock_paper_scissors_lizard_spock/")
+ ("/Users/pankajdoharey/Development/clojure/rock-paper-scissors-lizard-spock/" . "src/")
+ ("/Users/pankajdoharey/Development/clojure/url-shortner/src/" . "url_shortner/")
+ ("/Users/pankajdoharey/Development/clojure/url-shortner/" . "src/")
+ ("/Users/pankajdoharey/.emacs.d/" . "elpa/")
+ ("/Users/pankajdoharey/Development/clojure/clojure-noob/src/" . "clojure_noob/")
+ ("/Users/pankajdoharey/Development/clojure/clojure-noob/" . "src/")
+ ("/Users/pankajdoharey/Development/clojure/" . "clojure-noob/")
+ ("/Users/pankajdoharey/Development/" . "clojure/")
+ ("/Users/pankajdoharey/Dropbox/miNotes/" . "Orgs/")
+ ("/Users/pankajdoharey/Dropbox/" . "miNotes/")
+ ("/Users/pankajdoharey/emacsd_backup2/elpa/archives/" . "gnu/")
+ ("/Users/pankajdoharey/emacsd_backup2/elpa/" . "archives/")
+ ("/Users/pankajdoharey/emacsd_backup2/" . "elpa/")
+ ("/Users/pankajdoharey/Applications/" . "Autodesk Fusion 360.app/")
+ ("/Users/pankajdoharey/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/pankajdoharey/.emacs.d/elpa/gratuitous-dark-theme-1.3/"
+ "~/.emacs.d/elpa/gratuitous-dark-theme-1.3/"
+ "/Users/pankajdoharey/.emacs.d/"
+ "/Users/pankajdoharey/Development/clojure/clojure-noob/src/clojure_noob/"
+ "/Users/pankajdoharey/.emacs.d/vendor/"
+ "/Users/pankajdoharey/Development/clojure/clojure-noob/"
+ "/Users/pankajdoharey/Development/scmbag/"
+ "/Users/pankajdoharey/Development/codemismatch.github.io/source/stylesheets/"
+ "/Users/pankajdoharey/Development/Mudmonk/"
+ "/Users/pankajdoharey/.emacs.d/customizations/"
+ "/Users/pankajdoharey/.lein/"
+ "/Users/pankajdoharey/Development/mycv/layout/"
+ "/Users/pankajdoharey/Development/codemismatch.github.io/"
+ "/Users/pankajdoharey/Development/codemismatch.github.io/source/"
+ "/Users/pankajdoharey/Development/codemismatch.github.io/source/layouts/"
+ "/Users/pankajdoharey/Development/codemismatch.github.io/source/images/"
+ "/Users/pankajdoharey/Development/challenge/"
+ "/Users/pankajdoharey/Development/challenge/db/"
+ "/Users/pankajdoharey/Development/Phaser/bouncy/src/ts/"
+ "/Users/pankajdoharey/Development/Phaser/bouncy/src/js/"
+ "/Users/pankajdoharey/Development/Phaser/bouncy/"
+ "/Users/pankajdoharey/Dropbox/miNotes/Orgs/"
+ "/Users/pankajdoharey/Development/metacritical.github.io/"
+ "/Users/pankajdoharey/Development/metacritical.github.io/_includes/"
+ "/Users/pankajdoharey/Development/metacritical.github.io/ancient/assets/"
+ "/Users/pankajdoharey/Development/metacritical.github.io/_layouts/"
+ "/Users/pankajdoharey/Development/metacritical.github.io/css/"
+ "/Users/pankajdoharey/Development/metacritical.github.io/articles/org/"
+ "/Users/pankajdoharey/Development/metacritical.github.io/pages/"
+ "/Users/pankajdoharey/Development/"
+ "/Users/pankajdoharey/"
+ "/Users/pankajdoharey/Development/Soft3DEngine/js/"
+ "/Users/pankajdoharey/Development/Radish/lib/"
+ "/Users/pankajdoharey/Development/Babylon.js-FPS/"
+ "/Users/pankajdoharey/Development/Radish/"
+ "/Users/pankajdoharey/Downloads/"
+ "/Users/pankajdoharey/Development/WebGL/three.js/src/loaders/"
+ "/Users/pankajdoharey/Development/WebGL/threejs_tests/bower_components/threejs/build/"
+ "/Users/pankajdoharey/Development/WebGL/threejs_tests/bower_components/threejs/"
+ "/Users/pankajdoharey/Development/WebGL/threejs_tests/"
+ "/Users/pankajdoharey/Development/WebGL/TriggerRally/server/"
+ "/Users/pankajdoharey/Development/WebGL/HexGL/bkcore/"
+ "/Users/pankajdoharey/Development/WebGL/webgltest/"
+ "/Users/pankajdoharey/Development/WebGL/threejs_tests/build/"
+ "/Users/pankajdoharey/Development/WebGL/playcanvas-scifi-9bf69e384751/"
+ "/Users/pankajdoharey/Development/webgl-pong-game/"
+ "/Users/pankajdoharey/Development/Webgl/"
+ "/Users/pankajdoharey/Documents/"
+ "/Users/pankajdoharey/Development/electron-quick-start/"
+ "/Users/pankajdoharey/Development/Mudmonk/OldCode/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "gratuitous-dark-theme-autoloads.el"
+ "gratuitous-dark-theme.el"
+ "gratuitous-dark-theme-pkg.el"
+ "init.el"
+ "core.clj"
+ "org-mode-blog.el"
+ "project.clj"
+ "main.go"
+ "style.css"
+ "ui.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("~/.emacs.d/elpa/gratuitous-dark-theme-1.3/" (22837 31043 0 0) "gratuitous-dark-theme-autoloads.el" "gratuitous-dark-theme.elc" "gratuitous-dark-theme-pkg.el" "gratuitous-dark-theme.el" "../" "./")
+
+ ("/Users/pankajdoharey/.emacs.d/" (22859 43856 867119 0) "vendor/" ".smex-items" "cider-history" "backups/" "themes/" "%backup%~" "elpa/" "viper" "network-security.data" ".gitignore" ".recentf" "README.md" "init.el" "url/" "auto-save-list/" "tramp" "projectile-bookmarks.eld" "places" "ido.last~" "customizations/" ".DS_Store" "init.el~" "ido.last" "../" "./")
+
+ ("/Users/pankajdoharey/" (22859 43745 519821 0) ".ethash/" ".zlogin" ".viminfo" ".bash_history" ".gitconfig" ".cache/" ".python_history" "Downloads/" ".gem/" ".bash_profile" ".m2/" ".hyper.js" ".newsrc-dribble" "Documents/" ".npm/" ".emscripten_cache/" ".ido.last" ".Trash/" "Dropbox/" ".cljs/" ".profile" "Applications/" "Movies/" ".ssh/" "emacs_backup_6/" ".rustup/" ".git.scmbrc" ".idlerc/" ".hyper_plugins/" ".dropbox/" "Public/" ".mplayer/" ".lein/" ".bash_sessions/" ".cocoapods/" ".android/" ".cargo/" ".node_repl_history" ".emacs.d/" ".bash_profile.pysave" "Calibre Library/" ".oracle_jre_usage/" ".lesshst" ".mkshrc" ".matplotlib/" ".irb-history" "Library/" "Desktop/" ".rvm/" ".bundle/" "node_modules/" ".zprofile" ".FBReader/" ".multirust/" ".links/" "Pictures/" ".emscripten" ".local/" ".boot/" ".bash_profile~" ".zshrc" "Development/" ".vnc/" ".bashrc" ".godot/" ".subversion/" ".netrc" ".emscripten_sanity" ".qgis2/" ".wget-hsts" ".CFUserTextEncoding" ".lldb/" ".scm_breeze/" ".tmux.conf" ".thumbnails/" ".jspm/" ".DS_Store" ".ido.last~" ".vim/" ".node-gyp/" ".wine/" ".v8flags.5.4.500.45.pankajdoharey.json" ".kodi/" "Music/" ".config/" ".scmbrc" ".org-timestamps/" "../" "./")
+
+ ("/Users/pankajdoharey/.emacs.d/url/" (22848 50655 0 0) "cookies" "../" "./")
+
+ ("/Users/pankajdoharey/.emacs.d/customizations/" (22830 31123 0 0) "elisp-editing.el" "setup-js.el" "navigation.el" "editing.el" "setup-clojure.el" "misc.el" "shell-integration.el" "ui.el" "../" "./")
+
+ ("/Users/pankajdoharey/Desktop/" (22858 38651 586929 0) ".localized" "Screen Shot 2017-06-21 at 9.25.28 PM.png" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/.emacs.d/elpa/archives/" (22742 13479 0 0) "marmalade/" "melpa/" "gnu/" "org/" "../" "./")
+
+ ("/Users/pankajdoharey/.emacs.d/elpa/" (22838 21135 0 0) "ido-completing-read+-20170313.1603/" "s-20160928.636/" "go-mode-20170308.1512/" "clojure-mode-extra-font-locking-20170303.2310/" "cider-20170322.155/" "smex-20151212.1409/" "async-20170219.942/" "dash-20170207.2056/" "go-play-0.0.1/" "pkg-info-20150517.443/" "spinner-1.7.3/" "edit-indirect-20170310.1002/" "pretty-lambdada-20170307.940/" "markdown-edit-indirect-20170210.1504/" "clojure-mode-20170303.2310/" "git-commit-20170314.1414/" "nyan-mode-20160429.1323/" "typescript-mode-20170324.1301/" "paredit-20160615.1325/" "gotest-20170303.13/" "markdown-preview-eww-20160111.702/" "undo-tree-20161012.701/" "tagedit-20161121.55/" "goto-chg-20131228.659/" "archives/" "f-20170404.1039/" "ido-ubiquitous-20170313.1603/" "flymd-20160617.514/" "gratuitous-dark-theme-1.3/" "queue-0.1.1/" "markdown-mode-2.0/" "go-playground-20170226.43/" "with-editor-20170111.609/" "evil-20170323.1140/" "company-20170517.1436/" "projectile-20170309.30/" ".DS_Store" "molokai-theme-20151016.845/" "epl-20150517.433/" "magit-popup-20170308.146/" "magit-20170322.1550/" "markdown-mode-20170317.1202/" "exec-path-from-shell-20170304.1309/" "darkokai-theme-20160803.2058/" "seq-2.19/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/clojure/clojure-noob/src/clojure_noob/" (22859 37708 289425 0) "core.clj" "../" "./")
+
+ ("/Users/pankajdoharey/Development/clojure/clojure-noob/" (22858 32430 519682 0) "src/" "doc/" ".gitignore" ".lein-repl-history" "README.md" ".nrepl-port" "resources/" ".hgignore" "target/" "CHANGELOG.md" "test/" "LICENSE" "project.clj" "#project.clj#" "../" "./")
+
+ ("/Users/pankajdoharey/Development/" (22858 25150 837916 0) "adnauseam.chromium/" "gosu-examples/" "clojure-getting-started/" "Lagrange-gh-pages/" "Babylon.js-FPS/" "challenge/" "funcs.js" "synergy/" "btstack/" "minilisp/" "Phaser/" "judge/" "db/" "biwascheme/" "ptt/" "codemismatch.github.io/" "metacritical.github.io/" "jmc.lisp.txt" "Pong/" "README.md" "Canvas/" "electron-quick-start/" "mycv/" "scmbag/" "Lagrange-gh-pages.zip" "CoverLetter.pdf" "webquake/" "index.js" "Kodi/" "WebGL/" "goscreen/" "todo.org" "abrash-black-book/" "Racing/" "icns/" "emsdk_portable/" "clojure/" "Icon
+" ".DS_Store" "go/" "learn/" "Radish/" "Soft3DEngine/" "Mudmonk/" "index.html.erb" "../" "./")
+
+ ("/Users/pankajdoharey/.emacs.d/elpa/gratuitous-dark-theme-1.3/" (22837 31043 0 0) "gratuitous-dark-theme.elc" "gratuitous-dark-theme.el" "gratuitous-dark-theme-pkg.el" "gratuitous-dark-theme-autoloads.el" "../" "./")
+
+ ("/Users/pankajdoharey/.emacs.d/vendor/" (22761 18603 0 0) "org-mode-blog.el" "../" "./")
+
+ ("/Users/pankajdoharey/Development/codemismatch.github.io/source/stylesheets/" (22813 26176 0 0) "style.css" "javascript.fullPage.css" "bootstrap.min.css" "animate.min.css" "../" "./")
+
+ ("/Users/pankajdoharey/Development/codemismatch.github.io/source/" (22813 26176 0 0) "stylesheets/" "pages/" "layouts/" "javascripts/" "index.html.erb" "images/" "fonts/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/codemismatch.github.io/" (22825 24584 0 0) "source/" "Gemfile.lock" "Gemfile" "config.rb" "CNAME" "build.sh" "build/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/scmbag/" (22832 36202 0 0) "README.md" "main.go" ".git/" "../" "./")
+
+ ("/Users/pankajdoharey/.lein/self-installs/" (22628 34965 0 0) "leiningen-2.7.1-standalone.jar" "../" "./")
+
+ ("/Users/pankajdoharey/.lein/" (22760 44619 0 0) "self-installs/" "repl-history" "../" "./")
+
+ ("/Users/pankajdoharey/Development/clojure/clojure-noob/src/" (22829 30564 0 0) "clojure_noob/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/clojure/" (22829 30563 0 0) "clojure-noob/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Mudmonk/" (22829 14683 0 0) "README.md" "main.go" ".git/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/mycv/layout/" (22805 18324 0 0) "config.yaml" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/mycv/" (22805 18268 0 0) "resume_spec.rb" "resume_builder.rb" "README.md" "Rakefile" "prawn_manual.pdf" "Myresume.pdf" "layout/" "Gemfile.lock" "Gemfile" "base64/" "assets/" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/codemismatch.github.io/source/layouts/" (22802 47499 0 0) "layout.erb" "_slide3.html.haml" "_slide2.html.haml" "_slide1.html.haml" "_nav.html.haml" "_home.html.haml" "../" "./")
+
+ ("/Users/pankajdoharey/Development/codemismatch.github.io/source/images/" (22802 41885 0 0) "rails.png" "nodejs.png" "mismatch.ico" "logo.png" "js1.png" "js.png" "golang.png" "clojure.png" ".keep" "../" "./")
+
+ ("/Users/pankajdoharey/Development/challenge/" (22799 62037 0 0) "README.md" "index.js" "funcs.js" "db/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/challenge/db/" (22718 3044 0 0) "index.json" "e29311f6f1bf1af907f9ef9f44b8328b" "60b725f10c9c85c70d97880dfe8191b3" "3b5d5c3712955042212316173ccf37be" "2cd6ee2c70b0bde53fbe6cac3c8b8bb1" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Phaser/bouncy/src/js/" (22719 57686 0 0) "main.js" "balltexture.js" "ball.js" "../" "./")
+
+ ("/Users/pankajdoharey/Dropbox/miNotes/Orgs/" (22776 7112 0 0) "VOCP.org~" "VOCP.org" "UaaMilestones.org~" "UaaMilestones.org" "UaaMilestones.confluenze~" "UaaMilestones.confluenze" "todos.org~" "todos.org_archive" "tasklist_backup.org" "tasklist.org~" "tasklist.org" "talks.org" "StuffTodo.org~" "StuffTodo.org" "shows_i_watch.org~" "shows_i_watch.org" "Schedule.org~" "Schedule.org" "run_prettify.js" "prettify.css" "PhilosophyLearning.org" "OVCP.org~" "oss_projects.org" "Notes.org~" "Notes.org" "Notes.html" "NewIdeas.org" "new_note.org~" "Mypath.org~" "Mypath.org" "micro_manual_for_c.org" "leuven.css" "InterviewQuestions.org~" "InterviewQuestions.org" "FlyingFish.org~" "FlyingFish.org" "FactbaseArchitecture.org" "Evilorg-Keybindings.org~" "Evilorg-Keybindings.org" "emacs_color_code.org" "ElispNotes.org~" "ElispNotes.org" "Druidnotes.org~" "Druidnotes.org" "doxy.css" "cell.org" "BioHacker.org" "Bifrost_WM_spec.org" "ApacheZapellin.org" "../" "./")
+
+ ("/Users/pankajdoharey/Dropbox/miNotes/" (22776 7083 0 0) "uop_declataion.txt" "thought_experiments.txt" "something.org" "Orgs/" "mars_rover.txt" "mailtoSri.txt" "mailto3742.txt" "index.org~" "index.org" "images/" "esha_rails.txt" "budget.org" "../" "./")
+
+ ("/Users/pankajdoharey/Dropbox/" (22776 7467 0 0) "www.youtube.com:watch?v=wQmwEjL6K1U.webloc" "www.youtube.com:watch?v=LtmdiPUGGe8.webloc" "What The Ruby Craftsman Can Learn From The Smalltalk Master - Philippe Hanrigou - Mountain West Ruby Conference 2009.webloc" "vimeo.com:4930313.webloc" "Venket/" "The Vimeo HD Channel on Vimeo.webloc" "Shared/" "Screenshot/" "response.txt" "Public/" "Photos/" "objmodel2_ianpumarta.pdf" "miNotes/" "Manchester-color-wheel.pdf" "mail_to_esha.txt" "InterviewQuestions/" "Icon
+" "How to create your own virtual machine! Part I.pdf" "Holding The Line On Quora.pdf" "Herding Tigers - Software Development and the Art of War - Danny Blitz - Mountain West Ruby Conference 2009.webloc" "Coverletter.txt" "confreaks.com:videos:67-mwrc2009-herdi.webloc" "companies_top.txt" "Codemismatch/" "code/" "cheetsheets/" "channel9.msdn.com:Shows:Going+Deep:Lec.webloc" "Camera Uploads/" "Apps/" "ALL MY Stuff/" "A short intro to io.pdf" ".dropbox.cache/" ".dropbox" "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/" (22768 42809 0 0) "README.md" "menu/" "LICENSE" "index.html" "images/" "favicon.ico" "css/" "CNAME" "ancient/" "_site/" "_posts/" "_layouts/" "_includes/" "_config.yml" "404.html" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/ancient/assets/" (22761 19469 0 0) "selfdotsend.xcf" "js/" "img/" "disqus.org" "css/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/ancient/articles/" (22742 8541 0 0) "org/" "drafts/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/ancient/" (22761 19847 0 0) "serve" "pages/" "index.html" "assets/" "articles/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/css/" (22746 139 0 0) "syntax.css" "main.css" "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/_includes/" (22746 139 0 0) "social-sharing.html" "related-posts.html" "read-time.html" "menu.html" "header.html" "head.html" "google_analytics.html" "footer.html" "disqus.html" "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/_layouts/" (22746 139 0 0) "post.html" "page.html" "default.html" "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/_posts/" (22746 139 0 0) "2016-01-01-Welcome-to-Lagrange.md" "2015-12-12-Installation-Guide.md" "2015-11-11-Working-With-Jekyll.md" "2015-10-10-Working-With-Lagrange.md" "2015-09-09-Text-Formatting.md" "2015-08-08-Math-and-Code-Formatting.md" "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/pages/" (22761 17660 0 0) "rubyinterviewquestions.html" "logo.html" "gtd.html" "disqus.html" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/articles/drafts/" (22742 8541 0 0) "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/articles/org/" (22761 17585 0 0) "rubyinterviewquestions.org" "logo.org" "index.org" "gtd.org" "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/assets/" (22742 45990 0 0) "selfdotsend.xcf" "js/" "img/" "disqus.org" "css/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/metacritical.github.io/articles/" (22742 8541 0 0) "org/" "drafts/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Phaser/bouncy/src/ts/" (22720 12954 0 0) "main.ts" "ball.ts" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Phaser/bouncy/src/" (22697 48583 0 0) "ts/" "js/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Phaser/bouncy/" (22737 24900 0 0) "tsconfig.json" "src/" "rollup.config.js" "README.md" "public/" "package.json" "node_modules/" "bower_components/" "bower.json" "assets/" "app.js" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Phaser/" (22698 4234 0 0) "bouncy/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/ptt/" (22694 2825 0 0) "tsconfig.json" "src/" "rollup.config.js" "README.md" "public/" "package.json" "node_modules/" "bower_components/" "bower.json" "assets/" "app.js" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/.emacs.d/themes/" (21696 61294 0 0) "zenburn-theme.el" "tomorrow-theme.el" "tomorrow-night-theme.el" "tomorrow-night-eighties-theme.el" "tomorrow-night-bright-theme.el" "tomorrow-night-blue-theme.el" "color-theme-tomorrow.el" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Soft3DEngine/js/" (22664 51003 0 0) "public/" "package.json" "node_modules/" "index.js" "index.html" "bower_components/" "bower.json" "app/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Soft3DEngine/js/app/" (22663 19950 0 0) "../" "./")
+
+ ("/Users/pankajdoharey/Development/Babylon.js-FPS/" (22663 43073 0 0) "ts/" "sass/" "resources/" "README.md" "package.json" "node_modules/" "html/" "Gruntfile.js" "dist/" ".vscode/" ".tscache/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Radish/lib/" (22440 21231 0 0) "teelogger.js" "logo.js" "logdevices.js" "init.js" "global_inits.js" "assets/" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Radish/" (22440 21288 0 0) "views/" "uploads/" "routes/" "README.md" "radish.db" "public/" "package.json" "npm-debug.log" "logs/" "LICENSE.txt" "LICENSE" "lib/" "config/" "assets/" "app.js" "_scratch_" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Soft3DEngine/" (22663 18583 0 0) "README.md" "js/" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Downloads/" (22660 6787 0 0) "WotTankViewer_1_0_17.zip" "WM237_Basic.exe" "WineBottlerCombo_1.6.1.dmg" "volcano2 terrain.zip" "volcano2 terrain/" "volcano terrain.zip" "volcano terrain/" "The.Stanley.Parable-SKIDROW/" "The City/" "terraindemo.stl" "terraindemo.obj" "terraindemo.mtl" "terraindemo.dae" "terraindemo.blend" "terraindemo.3ds" "Terragen_4_Mac_40040.dmg" "Tanks of Versai/" "SnowTerrain/" "QGIS-2.18.2-1.dmg" "player_main_no_cg_textures.blend" "Paris/" "No.Starch.Realm.Of.Racket.Learn.To.Program.One.Game.At.A.Time.Jun.2013.ISBN.1593274912.pdf" "mountains.obj" "mountains.ma" "mountains.fbx" "LumberyardInstaller1.6.0.0.exe" "lris-christchurch-15m-dem-height-corrected-GTiff.zip" "lris-christchurch-15m-dem-height-corrected-GTiff/" "linuxgraphicsdrivers.pdf" "Leopard_2A6/" "Google Cardboard-manufacturing-guidelines.pdf" "Fuel - SKIDROW/" "Focal.Press.Postmortems.From.Game.Developers.Insights.From.The.Developers.Of.Unreal.Tournament.Black.And.White.Age.Of.Empires.And.Other.Top.Selling.Games.Feb.2003.ISBN.1578202140.pdf" "ejel-volume12-issue3-article284.pdf" "dro_setup.dmg" "corridor_room2.blend" "ce-launcher.exe.download/" "Blogging using org-mode (and nothing else).pdf" "Blender models/" "BGE_Tech_Demo_-_Train_Yard_v1.0.exe" "BGE Tech Demo V1/" "banner_gopro.svg" "Babylondot.js_Essentials_www.avxhome.in.pdf" "Babylondot.js_Essentials_www.avxhome.in.mobi" "Babylondot.js_Essentials_www.avxhome.in.epub" "babylon.math.ts" "artifexterra3d.1.2.beta.1.18.02.2014.zip" "About Downloads.lpdf/" "3zf4l.B.j.E.rar" "17a00kuc0l14-table-mountain/" ".waf-1.9.7-d27222240ebc8bcbca7fcd8f4ae914fb/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/" (22628 26045 0 0) "Shared/" "pankajdoharey/" ".localized" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/three.js/src/loaders/" (22637 13198 0 0) "TextureLoader.js" "ObjectLoader.js" "MaterialLoader.js" "LoadingManager.js" "Loader.js" "JSONLoader.js" "ImageLoader.js" "FontLoader.js" "FileLoader.js" "CubeTextureLoader.js" "CompressedTextureLoader.js" "Cache.js" "BufferGeometryLoader.js" "BinaryTextureLoader.js" "AudioLoader.js" "AnimationLoader.js" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/three.js/src/" (22637 13199 0 0) "Three.Legacy.js" "Three.js" "textures/" "scenes/" "renderers/" "polyfills.js" "objects/" "math/" "materials/" "loaders/" "lights/" "geometries/" "extras/" "core/" "constants.js" "cameras/" "audio/" "animation/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/three.js/" (22639 16536 0 0) "utils/" "test/" "src/" "rollup.config.js" "README.md" "package.json" "node_modules/" "LICENSE" "examples/" "editor/" "docs/" "build/" ".npmignore" ".gitignore" ".github/" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/threejs_tests/bower_components/threejs/build/" (22610 20082 0 0) "three.module.js" "three.min.js" "three.js" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/threejs_tests/bower_components/threejs/" (22642 38482 0 0) "utils/" "test/" "src/" "rollup.config.js" "README.md" "package.json" "node_modules/" "LICENSE" "examples/" "editor/" "docs/" "build/" ".npmignore" ".gitignore" ".github/" ".bower.json" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/threejs_tests/bower_components/" (22642 14381 0 0) "threejs/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/threejs_tests/" (22644 51455 0 0) "index.js" "index.html" "bower_components/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/TriggerRally/server/" (22639 16536 0 0) "views/" "util/" "tools/" "THREE/" "spec/" "shared/" "routes/" "public/" "paypal/" "package.json" "objects/" "node_modules/" "email.js" "down.coffee" "build/" "batch/" "backbone-mongoose.coffee" "app.coffee" "api.coffee" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/TriggerRally/" (22639 16536 0 0) "server/" "README.md" "LICENSE.md" "index.html" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/HexGL/bkcore/" (22638 136 0 0) "threejs/" "hexgl/" "Audio.js" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/HexGL/" (22640 48369 0 0) "textures.full/" "textures/" "replays/" "README.md" "package.zip" "package.webapp" "manifest.webapp" "LICENSE" "libs/" "launch.js" "launch.coffee" "index.html" "icon_64.png" "icon_32.png" "icon_256.png" "icon_128.png" "geometries/" "favicon.png" "css/" "cache.appcache" "bkcore.coffee/" "bkcore/" "audio/" ".htaccess" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/webgltest/" (22639 64096 0 0) "webgltest.html" "testgl.js" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/threejs_tests/build/" (22640 19191 0 0) "index.js" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/playcanvas-scifi-9bf69e384751/" (22632 60904 0 0) "third_person_camera.js" "script_extensions.js" "player.js" "muzzle_flash.js" "localserver.sh" "hud.js" "hit_effect.js" "gameclient.js" "game.js" "door.js" "crosshair.js" "character_look.js" "anisotropy.js" ".hg_archival.txt" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/" (22640 49348 0 0) "webgltest/" "TriggerRally/" "threejs_tests/" "threefab/" "three.js/" "playcanvas-scifi-9bf69e384751/" "Icon
+" "HexGL/" "goojs/" "engine/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/WebGL/threejs_tests/components/" (22640 19213 0 0) "duo-cache/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/CRYENGINE/" (22637 60429 0 0) "wscript" "waf_branch_spec.pyc" "waf_branch_spec.py" "Tools/" "Solutions/" "README.md" "LICENSE.md" "Engine/" "Editor/" "download_sdks.py" "download_sdks.exe" "cry_waf.sh" "cry_waf.exe" "Code/" "CMakeSettings.json" "CMakeLists.txt" "BinTemp/" "_WAF_/" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/webgl-pong-game/" (22638 15940 0 0) "three.min.js" "pong.js" "index.html" "canvas.css" "../" "./")
+
+ ("/Users/pankajdoharey/Documents/" (22637 51750 0 0) "My Videos/" "My Pictures/" "My Documents/" "CopperCube/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Webgl/" (22628 55704 0 0) "webgltest.html" "testgl.js" "../" "./")
+
+ ("/Users/pankajdoharey/Development/electron-quick-start/" (22618 18551 0 0) "renderer.js" "README.md" "playcanvas-latest.js" "package.json" "node_modules/" "main.js" "LICENSE.md" "index.html~" "index.html" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Mudmonk/OldCode/" (22515 40884 0 0) "views/" "mudmonk.rb" "misc/" "log/" "experiments/" "controller/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/Mudmonk/lib/" (22516 58798 0 0) "../" "./")
+
+ ("/Users/pankajdoharey/Development/restaurantly/" (22504 20108 0 0) "vendor/" "tmp/" "test/" "README.md" "Rakefile" "public/" "log/" "lib/" "Gemfile.lock" "Gemfile" "db/" "config.ru" "config/" "bin/" "app/" ".gitignore" "../" "./")
+
+ ("/Users/pankajdoharey/Development/oio-1473441697/" (22483 134 0 0) "submit" "README.pdf" "README.md" "README" "main.rb" ".oio_tmp/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/featurist/" (22475 12017 0 0) "templates/" "static/" "README.md" "app.py" ".git/" "../" "./")
+
+ ("/Users/pankajdoharey/.oh_my_bash/bin/" (22473 51449 0 0) "unicode_char" "truck" "tp" "term_color" "startup_scripts" "serve" "ruby_current" "rand_images" "pcp" "open" "mux_clock" "lock_me" "install_font" "img2ascii" "git_tree_cr.cr" "git_tree_cr" "git_tree" "git_branch.cr" "git_branch" "emacsw" "emacscl" "emacs_stop" "cx" "battery" "ansi_color" ".crystal/" "../" "./")
+
+ ("/Users/pankajdoharey/.oh_my_bash/libs/" (22473 64658 0 0) "trapper.sh" "tmux_status_left.sh" "tmux.conf" "prompt.sh" "command_not_found_handle.sh" "colors.sh" "bind_key.sh" "aliases.sh" "../" "./")
+
+ ("/Users/pankajdoharey/.oh_my_bash/" (22473 43592 0 0) "utils/" "test.txt" "libs/" "includer.sh" "bin/" "../" "./")
+
+ ("/Users/pankajdoharey/.oh_my_bash/utils/" (22441 64672 0 0) "ubuntu.pic" "tput_fg" "tput_bg" "penguin.pic" "lr" "disp_msg.sh" "db" "code.sh" "clock.sh" "alert.sh" "../" "./")
+
+ ("/Users/pankajdoharey/Applications/" (22472 22915 0 0) "Remove Autodesk Fusion 360.app/" "Autodesk Fusion 360.app/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/python/featurist/" (22469 55235 0 0) "README.md" "Projectdesc.txt" ".git/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/python/" (22469 18590 0 0) "featurist/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/clojure/clojureintro/" (22466 52345 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" "CHANGELOG.md" ".hgignore" ".gitignore" "../" "./")
+
+ ("/Users/pankajdoharey/Development/clojure/clojureintro/src/clojureintro/" (22466 52054 0 0) "core.clj" "../" "./")
+
+ ("/Users/pankajdoharey/Development/clojure/clojureintro/src/" (22466 51938 0 0) "clojureintro/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/clojure/intro-clojure-1/" (22466 51800 0 0) "video2.clj" "video1.clj" "README.md" ".git/" "../" "./")
+
+ ("/Users/pankajdoharey/Development/emacs/src/" (22464 50128 0 0) "xwidget.h" "xwidget.c" "xterm.h" "xterm.c" "xsmfns.c" "xsettings.h" "xsettings.c" "xselect.c" "xrdb.c" "xml.c" "xmenu.c" "xgselect.h" "xgselect.c" "xftfont.c" "xfont.c" "xfns.c" "xfaces.c" "xdisp.c" "window.h" "window.c" "widgetprv.h" "widget.h" "widget.c" "w32xfns.c" "w32uniscribe.c" "w32term.h" "w32term.c" "w32select.h" "w32select.c" "w32reg.c" "w32proc.c" "w32notify.c" "w32menu.c" "w32inevt.h" "w32inevt.c" "w32heap.h" "w32heap.c" "w32gui.h" "w32font.h" "w32font.c" "w32fns.c" "w32console.c" "w32common.h" "w32.h" "w32.c" "w16select.c" "vm-limit.c" "unexw32.c" "unexsol.c" "unexmacosx.c" "unexhp9k800.c" "unexelf.c" "unexec.h" "unexcw.c" "unexcoff.c" "unexaix.c" "undo.c" "tparam.h" "tparam.c" "textprop.c" "termopts.h" "terminfo.c" "terminal.c" "termhooks.h" "termchar.h" "termcap.c" "term.c" "syswait.h" "systty.h" "systime.h" "sysstdio.h" "syssignal.h" "sysselect.h" "sysdep.c" "syntax.h" "syntax.c" "sound.c" "sheap.h" "sheap.c" "search.c" "scroll.c" "region-cache.h" "region-cache.c" "regex.h" "regex.c" "README" "ralloc.c" "puresize.h" "profiler.c" "process.h" "process.c" "print.c" "nsterm.m" "nsterm.h" "nsselect.m" "nsmenu.m" "nsimage.m" "nsgui.h" "nsfont.m" "nsfns.m" "msdos.h" "msdos.c" "minibuf.c" "menu.h" "menu.c" "marker.c" "Makefile.in" "macuvs.h" "macros.h" "macros.c" "macfont.m" "macfont.h" "lread.c" "lisp.h" "lastfile.c" "kqueue.c" "keymap.h" "keymap.c" "keyboard.h" "keyboard.c" "intervals.h" "intervals.c" "insdel.c" "inotify.c" "indent.h" "indent.c" "image.c" "gtkutil.h" "gtkutil.c" "gnutls.h" "gnutls.c" "gmalloc.c" "gfilenotify.c" "getpagesize.h" "ftxfont.c" "ftfont.h" "ftfont.c" "ftcrfont.c" "fringe.c" "frame.h" "frame.c" "fontset.h" "fontset.c" "font.h" "font.c" "fns.c" "floatfns.c" "firstfile.c" "filelock.c" "fileio.c" "eval.c" "epaths.in" "emacsgtkfixed.h" "emacsgtkfixed.c" "emacs.c" "emacs-module.h" "emacs-module.c" "emacs-icon.h" "editfns.c" "dynlib.h" "dynlib.c" "dosfns.h" "dosfns.c" "doprnt.c" "doc.c" "disptab.h" "dispnew.c" "dispextern.h" "dired.c" "deps.mk" "decompress.c" "dbusbind.c" "data.c" "cygw32.h" "cygw32.c" "COPYING" "conf_post.h" "composite.h" "composite.c" "commands.h" "coding.h" "coding.c" "cmds.c" "cm.h" "cm.c" "chartab.c" "charset.h" "charset.c" "character.h" "character.c" "ChangeLog.9" "ChangeLog.8" "ChangeLog.7" "ChangeLog.6" "ChangeLog.5" "ChangeLog.4" "ChangeLog.3" "ChangeLog.2" "ChangeLog.13" "ChangeLog.12" "ChangeLog.11" "ChangeLog.10" "ChangeLog.1" "ccl.h" "ccl.c" "category.h" "category.c" "casetab.c" "casefiddle.c" "callproc.c" "callint.c" "bytecode.c" "buffer.h" "buffer.c" "blockinput.h" "bitmaps/" "bidi.c" "atimer.h" "atimer.c" "alloc.c" ".gdbinit" ".dbxinit" "../" "./")
+
+ ("/Users/pankajdoharey/Development/emacs/" (22464 47132 0 0) "test/" "src/" "README" "oldXMenu/" "nt/" "nextstep/" "msdos/" "modules/" "Makefile.in" "make-dist" "m4/" "lwlib/" "lisp/" "lib-src/" "lib/" "leim/" "INSTALL.REPO" "INSTALL" "GNUmakefile" "etc/" "doc/" "COPYING" "CONTRIBUTE" "configure.ac" "config.bat" "ChangeLog.2" "ChangeLog.1" "build-aux/" "BUGS" "autogen.sh" "admin/" ".gitignore" ".gitattributes" ".git/" ".dir-locals.el" "../" "./")
+
+ ("/Users/pankajdoharey/Development/clojure/rock-paper-scissors-lizard-spock/" (22464 41511 0 0) "test/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" "CHANGELOG.md" ".hgignore" ".gitignore" "../" "./")
+
+ ("/Users/pankajdoharey/Development/clojure/rock-paper-scissors-lizard-spock/src/rock_paper_scissors_lizard_spock/" (22464 41430 0 0) "core.clj" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
