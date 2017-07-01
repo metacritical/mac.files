@@ -1,4 +1,8 @@
-*.*
+*/*
+!.oh_my_bash/**
+!.bash_profile
+!.tmux.conf
+!.emacs.d/*
 Development/
 Downloads/
 Dropbox/
