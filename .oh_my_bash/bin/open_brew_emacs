@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+ARGV << "-t /dev/tty"
+commands = $stdin.read.split(/ /)[0].to_s + "/bin/emacs " + ARGV.join(' ')
+$stdout.puts %x( #{commands} )

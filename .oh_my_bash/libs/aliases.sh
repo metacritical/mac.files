@@ -19,7 +19,8 @@ alias rs='rails server'
 alias rc='rails c'
 alias ss='script/server'
 alias sc='script/console'
-alias emacs='emacs -nw'
+alias emacs="brew info 'emacs' | sed -n 6p | open_brew_emacs"
+alias tmux="TERM=screen-256color-bce tmux"
 alias src='source ~/.bashrc'
 alias sbts='a=$(pwd);cd $a'
 #alias rm='rm -i'
