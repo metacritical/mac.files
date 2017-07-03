@@ -42,5 +42,4 @@ node_modules/
 .zlogin
 .zprofile
 .zshrc
-
-nothing added to commit but untracked files present (use "git add" to track)
+.oh_my_bash/bin/gitstats
