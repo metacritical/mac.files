@@ -20,7 +20,7 @@ func getSymbol(name string) string{
 		"untracked":"\xe2\x9b\x94\xef\xb8\x8f\x0a", "alliswell":"☯️ ", "recycle":"♻️ ",
 		"hazard":"☢", "deleted":"\xe2\x9d\x8c\x0a", "smiley":"🙂 ", "flag":"🚩 " ,
 		"repoahead":"\xe2\x8f\xab\x0a", "prohibited":"\xf0\x9f\x9a\xab\x0a",
-		"changes":"\xE2\x9A\xA0\xEF\xB8\x8F", "no-vc":"\xe2\x9d\x97\xef\xb8\x8f\x0a",
+		"changes":"\xE2\x9A\xA0\xEF\xB8\x8F", "novc":"\xe2\x9d\x97\xef\xb8\x8f\x0a",
 	}[name]
 }
 
@@ -32,7 +32,7 @@ func processStatus(status string) string{
 
 	switch {
 		case noVC.MatchString(status) :
-		prompt = append(prompt, getSymbol("no-vc"))
+		prompt = append(prompt, getSymbol("novc"))
 		case unTracked.MatchString(status):
 		prompt = append(prompt, getSymbol("untracked"))
 		case notStaged.MatchString(status) :
@@ -61,6 +61,8 @@ func main(){
 			fmt.Print(gitBranch())
 		case "s", "status":
 			fmt.Print(processStatus(gitStatus()))
+		case "p", "prompt":
+			fmt.Print(gitBranch(), processStatus(gitBranch()))
 		default:
 			fmt.Print(execCommand(args[1]))
 		}
