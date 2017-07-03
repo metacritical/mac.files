@@ -22,7 +22,7 @@ HISTFILESIZE=8000
 
 export TERM="xterm-color"
 alias ls="ls -G"
-export PS1="$(pwd)\n\u@ $(gitstats branch) $(gitstats status) > "
+export PS1="$(pwd)\n\u@ $(gitstats prompt) > "
 
 [ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
 
