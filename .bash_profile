@@ -16,9 +16,6 @@ export OH_MY_BASH=$HOME/.oh_my_bash
 #Bash Scripts Includer
 source $OH_MY_BASH/includer.sh
 
-#Github Token
-export HOMEBREW_GITHUB_API_TOKEN="9a949d246403830bb9bfb12fedc1cf0b351af309"
-
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=4000
 HISTFILESIZE=8000
@@ -28,7 +25,7 @@ HISTFILESIZE=8000
 #alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 export TERM="xterm-color"
 alias ls="ls -G"
-export PROMPT="e[1;30m][e[e[1;30m]e[1;33m] u@H [e[1;32m]w[e[0m] e[1;30m]]n[[ e[1;31m]T[e[0m]e[1;30m] ] &gt; e[37m]"
+export PS1="$(pwd)\n\u@ $(gitstats branch) $(gitstats status) > "
 
 [ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
 
@@ -49,3 +46,5 @@ alias aws_connect="ssh -i ~/.ssh/MyKeyPairpem.pem ubuntu@54.169.238.96"
 alias cljs="java -cp ~/.cljs/cljs.jar:src clojure.main"export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+export PATH="$PATH:$HOME/.rvm/bin"
