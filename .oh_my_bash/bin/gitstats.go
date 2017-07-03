@@ -41,7 +41,7 @@ func processStatus(status string) string{
 		prompt = append(prompt, getSymbol("alliswell"))
 	}
 
-	return strings.Join(prompt, " ")
+	return strings.Join(prompt, "  ")
 }
 
 func gitBranch() string{
@@ -62,7 +62,7 @@ func main(){
 		case "s", "status":
 			fmt.Print(processStatus(gitStatus()))
 		case "p", "prompt":
-			fmt.Print(gitBranch(), processStatus(gitStatus()))
+			fmt.Print(processStatus(gitStatus()) , gitBranch())
 		default:
 			fmt.Print(execCommand(args[1]))
 		}
