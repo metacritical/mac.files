@@ -20,9 +20,6 @@ source $OH_MY_BASH/includer.sh
 HISTSIZE=4000
 HISTFILESIZE=8000
 
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-#alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 export TERM="xterm-color"
 alias ls="ls -G"
 export PS1="$(pwd)\n\u@ $(gitstats branch) $(gitstats status) > "
