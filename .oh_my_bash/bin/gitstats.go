@@ -38,7 +38,7 @@ func processStatus(status string) string{
 		case notStaged.MatchString(status) :
 		prompt = append(prompt, getSymbol("changes"))
 		default:
-		prompt = append(prompt, getSymbol("flag"))
+		prompt = append(prompt, getSymbol("alliswell"))
 	}
 
 	return strings.Join(prompt, " ")
