@@ -41,7 +41,7 @@ func processStatus(status string) string{
 		prompt = append(prompt, getSymbol("alliswell"))
 	}
 
-	return strings.Join(prompt, "  ")
+	return strings.Join(prompt, "")
 }
 
 func gitBranch() string{
