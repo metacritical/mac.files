@@ -24,7 +24,7 @@ export TERM="xterm-color"
 alias ls="ls -G"
 #export PS1="\[$(pwd)\]\n\u@ \[$(gitstats prompt)\]> "
 
-PS1="$(pwd)\n\u $(gitstats prompt) "
+PS1="$(pwd)\u\n \[$(gitstats prompt)\] "
 
 [ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
 
