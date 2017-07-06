@@ -22,9 +22,6 @@ HISTFILESIZE=8000
 
 export TERM="xterm-color"
 alias ls="ls -G"
-export PS1="\[$(pwd)\]@$(gitstats status)\n>   "
-
-#PS1="$(pwd) $(gitstats prompt)\n"
 
 [ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
 
@@ -47,3 +44,7 @@ alias cljs="java -cp ~/.cljs/cljs.jar:src clojure.main"export PATH="/usr/local/o
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 export PATH="$PATH:$HOME/.rvm/bin"
+
+
+export PS1="\[$(pwd)\] @ $(gitstats status)>   "
+
