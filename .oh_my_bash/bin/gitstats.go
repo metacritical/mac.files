@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"regexp"
 	"os/exec"
+	"strings"
 )
 
 
@@ -19,11 +20,11 @@ func execCommand(command string) string{
 
 func getSymbol(name string) string{
 	return	map[string]string{
-		"untracked":"\xe2\x9a\xa0\xef\xb8\x8f\x0a", "alliswell":"\xF0\x9F\x94\xAF",
+		"untracked":"\xe2\x9a\xa0\xef\xb8\x8f", "alliswell":"\xF0\x9F\x94\xAF",
 		"hazard":"\xe2\x98\xa2\xef\xb8\x8f\x0a", "deleted":"\xE2\x9D\x8C", 
-		"smiley":"\xf0\x9f\x99\x82\x0a", "flag":"\xf0\x9f\x9a\xa9\x0a", 
-		"repoahead":"\xE2\x98\x9D", "prohibited":"\xf0\x9f\x9a\xab\x0a",
-		"changes":"\xe2\x99\xbb\xef\xb8\x8f\x0a", "novc":"\xF0\x9F\x94\xAF",
+		"smiley":"\xf0\x9f\x99\x82", "flag":"\xf0\x9f\x9a\xa9", 
+		"repoahead":"\xE2\x98\x9D", "prohibited":"\xf0\x9f\x9a\xab",
+		"changes":"\xe2\x99\xbb\xef\xb8\x8f", "novc":"\xF0\x9F\x94\xAF",
 	}[name]
 }
 
@@ -49,7 +50,8 @@ func gitBranch() string{
 }
 
 func gitStatus() string{
-	return execCommand("status")
+	prompt := []string{ processStatus(execCommand("status")), gitBranch(),  "\x0a" }
+	return strings.Join(prompt, " ")
 }
 
 func main(){
@@ -60,9 +62,7 @@ func main(){
 		case "b", "branch":
 			fmt.Print(gitBranch())
 		case "s", "status":
-			fmt.Print(processStatus(gitStatus()))
-		case "p", "prompt":
-			fmt.Println(processStatus(gitStatus()), gitBranch())
+			fmt.Print(gitStatus())
 		default:
 			fmt.Print(execCommand(args[1]))
 		}

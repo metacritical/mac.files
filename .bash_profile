@@ -22,7 +22,7 @@ HISTFILESIZE=8000
 
 export TERM="xterm-color"
 alias ls="ls -G"
-export PS1="\[$(pwd)\]@\[$(gitstats prompt)\]\n>   "
+export PS1="\[$(pwd)\]@\[$(gitstats status)\]\n>   "
 
 #PS1="$(pwd) $(gitstats prompt)\n"
 
