@@ -19,10 +19,11 @@ func execCommand(command string) string{
 
 func getSymbol(name string) string{
 	return	map[string]string{
-		"untracked":"\xE2\x80\xBC", "alliswell":"\xF0\x9F\x94\xAF",
-		"hazard":"", "deleted":"\xE2\x9D\x8C", "smiley":"", "flag":"",
-		"repoahead":"\xE2\x98\x9D", "prohibited":"",
-		"changes":"\xE2\x9A\xA0", "novc":"\u26a0",
+		"untracked":"\xe2\x9a\xa0\xef\xb8\x8f\x0a", "alliswell":"\xF0\x9F\x94\xAF",
+		"hazard":"\xe2\x98\xa2\xef\xb8\x8f\x0a", "deleted":"\xE2\x9D\x8C", 
+		"smiley":"\xf0\x9f\x99\x82\x0a", "flag":"\xf0\x9f\x9a\xa9\x0a", 
+		"repoahead":"\xE2\x98\x9D", "prohibited":"\xf0\x9f\x9a\xab\x0a",
+		"changes":"\xe2\x99\xbb\xef\xb8\x8f\x0a", "novc":"\xF0\x9F\x94\xAF",
 	}[name]
 }
 
