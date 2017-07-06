@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"regexp"
 	"os/exec"
-	"strings"
 )
 
 
@@ -20,7 +19,7 @@ func execCommand(command string) string{
 
 func getSymbol(name string) string{
 	return	map[string]string{
-		"untracked":"\xE2\x80\xBC", "alliswell":"\xe2\x99\xbb\x0a",
+		"untracked":"\xE2\x80\xBC", "alliswell":"\xF0\x9F\x94\xAF",
 		"hazard":"", "deleted":"\xE2\x9D\x8C", "smiley":"", "flag":"",
 		"repoahead":"\xE2\x98\x9D", "prohibited":"",
 		"changes":"\xE2\x9A\xA0", "novc":"\u26a0",
@@ -28,23 +27,20 @@ func getSymbol(name string) string{
 }
 
 func processStatus(status string) string{
-	prompt := make([]string, 5)
 	var noVC = regexp.MustCompile("Not a git repository")
 	var unTracked = regexp.MustCompile("Untracked files")
 	var notStaged = regexp.MustCompile("Changes not staged for commit")
 
 	switch {
 		case noVC.MatchString(status) :
-		prompt = append(prompt, getSymbol("novc"))
+		return getSymbol("novc")
 		case unTracked.MatchString(status):
-		prompt = append(prompt, getSymbol("untracked"))
+		return getSymbol("untracked")
 		case notStaged.MatchString(status) :
-		prompt = append(prompt, getSymbol("changes"))
+		return getSymbol("changes")
 		default:
-		prompt = append(prompt, getSymbol("alliswell"))
+		return getSymbol("alliswell")
 	}
-	
-	return strings.Join(prompt, "")
 }
 
 func gitBranch() string{
