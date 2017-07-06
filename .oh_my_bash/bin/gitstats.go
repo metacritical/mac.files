@@ -62,7 +62,7 @@ func main(){
 		case "s", "status":
 			fmt.Print(processStatus(gitStatus()))
 		case "p", "prompt":
-			fmt.Print(processStatus(gitStatus()) + gitBranch())
+			fmt.Println(processStatus(gitStatus()), gitBranch())
 		default:
 			fmt.Print(execCommand(args[1]))
 		}
