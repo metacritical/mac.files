@@ -46,5 +46,5 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export PATH="$PATH:$HOME/.rvm/bin"
 
 
-export PS1='['$(pwd)'] \@ '$(gitstats status)'>  '
+export PS1='$(pwd) \n\@ $(gitstats status)> '
 
