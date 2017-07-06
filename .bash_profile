@@ -38,8 +38,8 @@ export GOPATH="/Users/pankajdoharey/Development/go"
 export PATH="$GOPATH/bin:$PATH"
 
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-alias aws_connect="ssh -i ~/.ssh/MyKeyPairpem.pem ubuntu@54.169.238.96"
-alias cljs="java -cp ~/.cljs/cljs.jar:src clojure.main"export PATH="/usr/local/opt/sqlite/bin:$PATH"
+alias cljs="java -cp ~/.cljs/cljs.jar:src clojure.main"
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
