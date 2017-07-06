@@ -43,3 +43,5 @@ node_modules/
 .zprofile
 .zshrc
 .oh_my_bash/bin/gitstats
+.Xauthority*
+.serverauth*
