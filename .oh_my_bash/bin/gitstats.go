@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"regexp"
 	"os/exec"
-	"strings"
+	//"strings"
 )
 
 var getSymbol = map[string]string{
@@ -33,6 +33,7 @@ func processStatus(status string) string{
 	var noVC = regexp.MustCompile("Not a git repository")
 	var unTracked = regexp.MustCompile("Untracked files")
 	var notStaged = regexp.MustCompile("Changes not staged for commit")
+	var exitCode = regexp.MustCompile("exit status 128")
 
 	switch {
 		case noVC.MatchString(status) :
@@ -41,9 +42,12 @@ func processStatus(status string) string{
 		return getSymbol["untracked"]
 		case notStaged.MatchString(status) :
 		return getSymbol["changes"]
+		case exitCode.MatchString(status):
+		return getSymbol["flag"]
 		default:
 		return getSymbol["alliswell"]
 	}
+
 }
 
 func processBranch(branchdata string) string{
@@ -62,8 +66,7 @@ func gitBranch() string{
 }
 
 func gitStatus() string{
-	prompt := []string{ processStatus(execCommand("status")), gitBranch(),  "\x0a" }
-	return strings.Join(prompt, " ")
+	return processStatus(execCommand("status"))
 }
 
 func main(){
@@ -75,6 +78,9 @@ func main(){
 			fmt.Print(gitBranch())
 		case "s", "status":
 			fmt.Print(gitStatus())
+		case "p", "prompt":
+			fmt.Print(gitStatus(), " ", gitBranch(), ">>")
+
 		default:
 			fmt.Print(execCommand(args[1]))
 		}
