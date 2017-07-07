@@ -46,5 +46,5 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export PATH="$PATH:$HOME/.rvm/bin"
 
 
-export PS1='\033[38;5;202m$(pwd)\033[0m \n\033[38;5;135m\@\033[0m $(gitstats prompt) '
+export PS1='\033[38;5;202m$(pwd)\033[0m \n\033[38;5;135m\@\033[0m $(gits prompt) '
 

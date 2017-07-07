@@ -45,3 +45,4 @@ node_modules/
 .oh_my_bash/bin/gitstats
 .Xauthority*
 .serverauth*
+gits
