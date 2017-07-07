@@ -14,7 +14,7 @@ var getSymbol = map[string]string{
 	"hazard":"\xe2\x98\xa2\xef\xb8\x8f",
 	"deleted":"\xE2\x9D\x8C",
 	"smiley":"\xf0\x9f\x99\x82",
-	"flag":"\xf0\x9f\x9a\xa9",
+	"noentry":"\xe2\x9b\x94\xef\xb8\x8f",
 	"repoahead":"\xE2\x98\x9D",
 	"novc":"\xf0\x9f\x9a\xab\x0a",
 	"changes":"\xe2\x99\xbb\xef\xb8\x8f",
@@ -43,7 +43,7 @@ func processStatus(status string) string{
 		case notStaged.MatchString(status) :
 		return getSymbol["changes"]
 		case exitCode.MatchString(status):
-		return getSymbol["flag"]
+		return getSymbol["noentry"]
 		default:
 		return getSymbol["alliswell"]
 	}
