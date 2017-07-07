@@ -20,7 +20,8 @@ func execCommand(command string) string{
 
 func getSymbol(name string) string{
 	return map[string]string{
-		"untracked":"\xe2\x9a\xa0\xef\xb8\x8f", "alliswell":"\xF0\x9F\x94\xAF",
+		"untracked":"\xe2\x9a\xa0\xef\xb8\x8f", 
+		"alliswell":"\xe2\x98\xaf\xef\xb8\x8f",
 		"hazard":"\xe2\x98\xa2\xef\xb8\x8f", "deleted":"\xE2\x9D\x8C", 
 		"smiley":"\xf0\x9f\x99\x82", "flag":"\xf0\x9f\x9a\xa9", 
 		"repoahead":"\xE2\x98\x9D", "prohibited":"\xf0\x9f\x9a\xab",
@@ -57,7 +58,7 @@ func gitStatus() string{
 func processBranch(branchdata string) string{
 	var branchMatch = regexp.MustCompile(`[(^\*)].+`)
 	match := branchMatch.FindAllString(branchdata, 1)[0]
-	return match + "\n"
+	return "\033[38;5;112m"+ match + "\033[0m\n"
 }
 
 
