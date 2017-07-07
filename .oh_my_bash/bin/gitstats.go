@@ -42,7 +42,7 @@ func processStatus(status string) string{
 		case notStaged.MatchString(status) :
 		return getSymbol["changes"]
 		default:
-		return getSymbol["flag"]
+		return getSymbol["alliswell"]
 	}
 }
 
