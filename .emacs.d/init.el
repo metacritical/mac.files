@@ -29,8 +29,8 @@
   (tool-bar-mode -1)
   (scroll-bar-mode -1))
 
-;;Company Modde global
-(global-company-mode t)
+;;Global Company Mode
+;;(global-company-mode t)
 
 ;; The packages you want installed. You can also install these
 ;; manually with M-x package-install
@@ -222,7 +222,7 @@
  '(magit-diff-use-overlays nil)
  '(package-selected-packages
    (quote
-    (compan gratuitous-dark-theme molokai-theme go-mode go-play go-playground flymd markdown-edit-indirect markdown-mode markdown-preview-eww typescript-mode tagedit smex projectile pretty-lambdada paredit nyan-mode magit ido-ubiquitous exec-path-from-shell evil darkokai-theme clojure-mode-extra-font-locking cider)))
+    (emacs-home cargo flycheck-rust flymake-rust go-playground-cli racer rust-mode rust-playground company gratuitous-dark-theme molokai-theme go-mode go-play go-playground flymd markdown-edit-indirect markdown-mode markdown-preview-eww typescript-mode tagedit smex projectile pretty-lambdada paredit nyan-mode magit ido-ubiquitous exec-path-from-shell evil darkokai-theme clojure-mode-extra-font-locking cider)))
  '(pos-tip-background-color "#E6DB74")
  '(pos-tip-foreground-color "#242728")
  '(vc-annotate-background nil)
