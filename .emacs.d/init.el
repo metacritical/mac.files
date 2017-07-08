@@ -222,7 +222,7 @@
  '(magit-diff-use-overlays nil)
  '(package-selected-packages
    (quote
-    (emacs-home cargo flycheck-rust flymake-rust go-playground-cli racer rust-mode rust-playground company gratuitous-dark-theme molokai-theme go-mode go-play go-playground flymd markdown-edit-indirect markdown-mode markdown-preview-eww typescript-mode tagedit smex projectile pretty-lambdada paredit nyan-mode magit ido-ubiquitous exec-path-from-shell evil darkokai-theme clojure-mode-extra-font-locking cider)))
+    (airplay 4clojure emacs-home cargo flycheck-rust flymake-rust go-playground-cli racer rust-mode rust-playground company gratuitous-dark-theme molokai-theme go-mode go-play go-playground flymd markdown-edit-indirect markdown-mode markdown-preview-eww typescript-mode tagedit smex projectile pretty-lambdada paredit nyan-mode magit ido-ubiquitous exec-path-from-shell evil darkokai-theme clojure-mode-extra-font-locking cider)))
  '(pos-tip-background-color "#E6DB74")
  '(pos-tip-foreground-color "#242728")
  '(vc-annotate-background nil)
