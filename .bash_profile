@@ -23,7 +23,6 @@ HISTFILESIZE=8000
 export TERM="xterm-color"
 alias ls="ls -G"
 
-[ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
@@ -38,7 +37,6 @@ export GOPATH="/Users/pankajdoharey/Development/go"
 export PATH="$GOPATH/bin:$PATH"
 
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-alias cljs="java -cp ~/.cljs/cljs.jar:src clojure.main"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
@@ -46,5 +44,6 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export PATH="$PATH:$HOME/.rvm/bin"
 
 
-export PS1='\033[38;5;202m$(pwd)\033[0m \n\033[38;5;135m\@\033[0m $(gits prompt) '
+[ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
 
+export PS1='\033[38;5;202m$(pwd)\033[0m \n\033[38;5;135m\@\033[0m $(gits prompt) '
