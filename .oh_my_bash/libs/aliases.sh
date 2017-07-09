@@ -35,5 +35,6 @@ alias cd.='cd ..'
 alias cd..='cd ../../'
 alias cd...='cd ../../../'
 alias cd....='cd ../../../../'
-alias clj="java -cp ~/Downloads/clojure-1.8.0/clojure-1.8.0.jar clojure.main"
+alias clj="java -cp $OH_MY_BASH/bin/clojure-1.8.0.jar clojure.main"
+alias cljs="java -cp $OH_MY_BASH/bin/cljs.jar:src clojure.main"
 alias serve="ruby -run -ehttpd . -p8000"
