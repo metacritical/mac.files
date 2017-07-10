@@ -1,1 +1,1 @@
-PS1="\[\$(tput setaf 147)\]\n\w\[\$(printf '\033[0m')\] [\[\$(tput setaf 196)\]\$(ruby_current version)\[\$(printf '\033[0m')\] \[\$(tput setaf 165)\]\$(ruby_current seperator)\[\$(printf '\033[0m')\] \[\$(tput setaf 10)\]\$(ruby_current gemset)\[\$(printf '\033[0m')\]]\n\[\$(tput setab 54)\]\[\033[1;39m\]\$(git_tree) \[\$(printf '\033[0m')\]\[\$(tput setaf 220)\]⯇⯈ \[\$(printf '\033[0m')\]"
+PS1='\[\033[38;5;202m\]$(pwd)\n\[\033[38;5;135m\]\@ $(gits prompt) '

@@ -79,8 +79,7 @@ func main(){
 		case "s", "status":
 			fmt.Print(gitStatus())
 		case "p", "prompt":
-			fmt.Print(gitStatus(), " ", gitBranch(), "\033[38;5;33m>>\033[0m")
-
+			fmt.Print(gitStatus(), " ", gitBranch(), ">>")
 		default:
 			fmt.Print(execCommand(args[1]))
 		}

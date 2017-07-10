@@ -6,7 +6,6 @@ alias _='sudo'
 alias lsv='ls -v --color=auto'
 alias lsd='ls -l --color=auto'
 #alias ll='ls -alF --color=auto'
-alias beg='bundle exec guard'
 alias db:c='rake db:create'
 alias db:m='rake db:migrate'
 alias db:d='rake db:drop'
@@ -26,7 +25,6 @@ alias sbts='a=$(pwd);cd $a'
 #alias rm='rm -i'
 alias :q='exit 0'
 alias :Q='exit 0'
-alias sdsconnect='ssh root@162.243.91.33'
 alias jira_pass='cat ~/Documents/creds.txt | xclip -i -selection clipboard'
 alias speedtest='wget --output-document=/dev/null http://speedtest.wdc01.softlayer.com/downloads/test500.zip'
 alias rgrep='grep --color=auto -r -n2 '
@@ -38,3 +36,4 @@ alias cd....='cd ../../../../'
 alias clj="java -cp $OH_MY_BASH/bin/clojure-1.8.0.jar clojure.main"
 alias cljs="java -cp $OH_MY_BASH/bin/cljs.jar:src clojure.main"
 alias serve="ruby -run -ehttpd . -p8000"
+alias ls="ls -G"
