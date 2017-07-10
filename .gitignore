@@ -35,8 +35,6 @@ node_modules/
 .profile
 .python_history
 .scmbrc
-.tmux.conf~
-.v8flags.5.4.500.45.pankajdoharey.json
 .viminfo
 .wget-hsts
 .zlogin
@@ -46,3 +44,5 @@ node_modules/
 .Xauthority*
 .serverauth*
 gits
+.lumo_history
+.planck_history
