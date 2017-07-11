@@ -192,6 +192,27 @@
 ;;Gratuitous dark theme
 (load "~/.emacs.d/elpa/gratuitous-dark-theme-1.3/gratuitous-dark-theme.el")
 
+;;Terminal ansi color.
+(load "~/.emacs.d/elpa/xterm-color-20170102.1525/xterm-color.el")
+(progn (add-hook 'comint-preoutput-filter-functions 'xterm-color-filter)
+       (setq comint-output-filter-functions (remove 'ansi-color-process-output comint-output-filter-functions)))
+(require 'eshell)
+
+(add-hook 'eshell-mode-hook
+          (lambda ()
+            (setq xterm-color-preserve-properties t)))
+
+(add-to-list 'eshell-preoutput-filter-functions 'xterm-color-filter)
+(setq eshell-output-filter-functions (remove 'eshell-handle-ansi-color eshell-output-filter-functions))
+
+
+
+
+
+
+
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -222,7 +243,7 @@
  '(magit-diff-use-overlays nil)
  '(package-selected-packages
    (quote
-    (airplay 4clojure emacs-home cargo flycheck-rust flymake-rust go-playground-cli racer rust-mode rust-playground company gratuitous-dark-theme molokai-theme go-mode go-play go-playground flymd markdown-edit-indirect markdown-mode markdown-preview-eww typescript-mode tagedit smex projectile pretty-lambdada paredit nyan-mode magit ido-ubiquitous exec-path-from-shell evil darkokai-theme clojure-mode-extra-font-locking cider)))
+    (xterm-color airplay 4clojure emacs-home cargo flycheck-rust flymake-rust go-playground-cli racer rust-mode rust-playground company gratuitous-dark-theme molokai-theme go-mode go-play go-playground flymd markdown-edit-indirect markdown-mode markdown-preview-eww typescript-mode tagedit smex projectile pretty-lambdada paredit nyan-mode magit ido-ubiquitous exec-path-from-shell evil darkokai-theme clojure-mode-extra-font-locking cider)))
  '(pos-tip-background-color "#E6DB74")
  '(pos-tip-foreground-color "#242728")
  '(vc-annotate-background nil)

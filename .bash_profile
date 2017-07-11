@@ -1,5 +1,5 @@
 #Alias list by permissions
-export TERM=screen-256color
+export TERM=xterm-256color
 
 #Setup Default Editor
 export EDITOR='emacsclient -nw'
@@ -44,3 +44,7 @@ source $OH_MY_BASH/includer.sh
 
 #BASH Prompt
 source $BASH_LIBS/prompt.sh
+
+if [ "$TERM" = dumb ] && [ "$INSIDE_EMACS" ]; then
+    export TERM=dumb-emacs-ansi COLORTERM=1
+fi
