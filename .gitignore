@@ -46,3 +46,5 @@ node_modules/
 gits
 .lumo_history
 .planck_history
+.emacs.d/.cache/
+.emacs.d/eshell/
