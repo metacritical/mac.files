@@ -227,7 +227,7 @@
  '(custom-enabled-themes nil)
  '(custom-safe-themes
    (quote
-    ("7f1263c969f04a8e58f9441f4ba4d7fb1302243355cb9faecb55aec878a06ee9" "1157a4055504672be1df1232bed784ba575c60ab44d8e6c7b3800ae76b42f8bd" "cf08ae4c26cacce2eebff39d129ea0a21c9d7bf70ea9b945588c1c66392578d1" "5ee12d8250b0952deefc88814cf0672327d7ee70b16344372db9460e9a0e3ffc" "9e54a6ac0051987b4296e9276eecc5dfb67fdcd620191ee553f40a9b6d943e78" "52588047a0fe3727e3cd8a90e76d7f078c9bd62c0b246324e557dfa5112e0d0c" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" "70403e220d6d7100bae7775b3334eddeb340ba9c37f4b39c189c2c29d458543b" default)))
+    ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "7f1263c969f04a8e58f9441f4ba4d7fb1302243355cb9faecb55aec878a06ee9" "1157a4055504672be1df1232bed784ba575c60ab44d8e6c7b3800ae76b42f8bd" "cf08ae4c26cacce2eebff39d129ea0a21c9d7bf70ea9b945588c1c66392578d1" "5ee12d8250b0952deefc88814cf0672327d7ee70b16344372db9460e9a0e3ffc" "9e54a6ac0051987b4296e9276eecc5dfb67fdcd620191ee553f40a9b6d943e78" "52588047a0fe3727e3cd8a90e76d7f078c9bd62c0b246324e557dfa5112e0d0c" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" "70403e220d6d7100bae7775b3334eddeb340ba9c37f4b39c189c2c29d458543b" default)))
  '(fci-rule-color "#424748")
  '(highlight-changes-colors (quote ("#ff8eff" "#ab7eff")))
  '(highlight-tail-colors
@@ -243,7 +243,7 @@
  '(magit-diff-use-overlays nil)
  '(package-selected-packages
    (quote
-    (xterm-color airplay 4clojure emacs-home cargo flycheck-rust flymake-rust go-playground-cli racer rust-mode rust-playground company gratuitous-dark-theme molokai-theme go-mode go-play go-playground flymd markdown-edit-indirect markdown-mode markdown-preview-eww typescript-mode tagedit smex projectile pretty-lambdada paredit nyan-mode magit ido-ubiquitous exec-path-from-shell evil darkokai-theme clojure-mode-extra-font-locking cider)))
+    (spacemacs-theme xterm-color airplay 4clojure emacs-home cargo flycheck-rust flymake-rust go-playground-cli racer rust-mode rust-playground company gratuitous-dark-theme molokai-theme go-mode go-play go-playground flymd markdown-edit-indirect markdown-mode markdown-preview-eww typescript-mode tagedit smex projectile pretty-lambdada paredit nyan-mode magit ido-ubiquitous exec-path-from-shell evil darkokai-theme clojure-mode-extra-font-locking cider)))
  '(pos-tip-background-color "#E6DB74")
  '(pos-tip-foreground-color "#242728")
  '(vc-annotate-background nil)
