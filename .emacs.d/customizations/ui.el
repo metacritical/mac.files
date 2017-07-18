@@ -34,7 +34,7 @@
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
 ;; (in lines high) Emacs will have whenever you start it
-(setq initial-frame-alist '((top . 0) (left . 650) (width . 96) (height . 52)))
+(setq initial-frame-alist '((top . 0) (left . 708) (width . 89) (height . 55)))
 
 
 ;; These settings relate to how emacs interacts with your operating system

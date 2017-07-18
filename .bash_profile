@@ -28,14 +28,6 @@ export GOROOT="/usr/local/opt/go/libexec"
 export GOPATH="/Users/pankajdoharey/Development/go"
 export PATH="$GOPATH/bin:$PATH"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
-
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
-#SCM Breeze
-[ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
-
 #Custom Scipts Folder
 export OH_MY_BASH=$HOME/.oh_my_bash
 
@@ -48,3 +40,12 @@ source $BASH_LIBS/prompt.sh
 if [ "$TERM" = dumb ] && [ "$INSIDE_EMACS" ]; then
     export TERM=dumb-emacs-ansi COLORTERM=1
 fi
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+#SCM Breeze
+[ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
+
