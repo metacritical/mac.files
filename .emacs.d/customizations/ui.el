@@ -81,7 +81,6 @@
 ;;Nyan Mode
 (nyan-mode)
 (nyan-start-animation)
-(load-theme 'darkokai t)
 
 ;; Pretty Lambda
 (require 'pretty-lambdada)
