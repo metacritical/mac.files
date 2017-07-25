@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "pretty-lambdada" "pretty-lambdada.el" (22903
-;;;;;;  28684 793518 163000))
+;;;### (autoloads nil "pretty-lambdada" "pretty-lambdada.el" (22742
+;;;;;;  13572 0 0))
 ;;; Generated autoloads from pretty-lambdada.el
 
 (let ((loads (get 'pretty-lambda 'custom-loads))) (if (member '"pretty-lambdada" loads) nil (put 'pretty-lambda 'custom-loads (cons '"pretty-lambdada" loads))))

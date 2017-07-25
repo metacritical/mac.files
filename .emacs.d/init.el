@@ -8,7 +8,10 @@
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t) ; Org-mode's repository
+;; Org-mode's repository
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+(add-to-list 'package-archives '("tromey" . "http://tromey.com/elpa/") t)
+
 
 
 ;; Load and activate emacs packages. Do this first so that the
@@ -65,7 +68,7 @@
     projectile
 
     ;; colorful parenthesis matching
-    ;; rainbow-delimiters
+    rainbow-delimiters
 
     ;; edit html tags like sexps
     tagedit
@@ -189,6 +192,8 @@
 ;;org-mode blogging functions.
 (load "org-mode-blog.el")
 
+;;Gratuitous dark theme
+;; (load "~/.emacs.d/elpa/gratuitous-dark-theme-1.3/gratuitous-dark-theme.el")
 
 ;;Terminal ansi color.
 (load "~/.emacs.d/elpa/xterm-color-20170102.1525/xterm-color.el")
@@ -204,6 +209,14 @@
 (setq eshell-output-filter-functions (remove 'eshell-handle-ansi-color eshell-output-filter-functions))
 
 
+;; Elscreen Multiterm 
+;;(require 'elscreen-multi-term)
+
+;;Set Multi term Stuff
+
+(require 'multi-term)
+(setq multi-term-program "/bin/bash")
+
 ;; Lein PATH
 (add-to-list 'exec-path "/usr/local/bin/")
 
@@ -213,9 +226,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (smex xterm-color typescript-mode tagedit simple-httpd rust-playground racer projectile pretty-lambdada paredit nyan-mode markdown-preview-eww markdown-edit-indirect magit ido-ubiquitous helm-company go-playground-cli go-playground go-play flymd flymake-rust flycheck-rust exec-path-from-shell evil emacs-home company-racer company-go clojure-mode-extra-font-locking cider-decompile 4clojure))))
+)
+;; (put 'downcase-region 'disabled nil)
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
