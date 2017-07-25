@@ -209,14 +209,6 @@
 (setq eshell-output-filter-functions (remove 'eshell-handle-ansi-color eshell-output-filter-functions))
 
 
-;; Elscreen Multiterm 
-;;(require 'elscreen-multi-term)
-
-;;Set Multi term Stuff
-
-(require 'multi-term)
-(setq multi-term-program "/bin/bash")
-
 ;; Lein PATH
 (add-to-list 'exec-path "/usr/local/bin/")
 
