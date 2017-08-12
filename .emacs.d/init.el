@@ -33,7 +33,7 @@
   (scroll-bar-mode -1))
 
 ;;Global Company Mode
-;;(global-company-mode t)
+(add-hook 'after-init-hook 'global-company-mode)
 
 ;; The packages you want installed. You can also install these
 ;; manually with M-x package-install
@@ -106,6 +106,14 @@
     ;;company mode
     company
 
+    ;;Ycmd
+    ;; ycmd
+
+    ;;Ycmd Company
+    ;; company-ycmd
+
+    ;; Autocomplete Cider
+    ac-cider
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -136,7 +144,6 @@
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
-
 ;;;;
 ;; Original Elpa
 ;;
@@ -181,6 +188,10 @@
 ;;Require Elm mode
 ;;(require 'elm-mode)
 
+;; You Complete Me Loader.
+;; (add-to-list 'load-path "~/.emacs.d/vendor/ycmd/")
+;; (load "load-ycmd.el")
+
 ;;Gnus 
 (setq gnus-select-method '(nntp "news://gnu.emacs.help"))
 (setq gnus-read-active-file nil)
@@ -213,17 +224,20 @@
 (add-to-list 'exec-path "/usr/local/bin/")
 
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
-)
-;; (put 'downcase-region 'disabled nil)
-
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(elfeed-feeds
+   (quote
+    ("https://whilo.github.io/feed.xml" "https://charsequence.blogspot.com/feeds/posts/default" "http://feeds.soundcloud.com/users/soundcloud:users:220484243/sounds.rss" "http://www.lispcast.com/feed" "http://mitchellh.com/feed" "http://blog.oleganza.com/rss" "http://thinkrelevance.com/blog/atom.xml" "http://feeds.feedburner.com/RuminationsOfAProgrammer" "http://gigasquidsoftware.com/atom.xml" "https://rails-weekly.ongoodbits.com/feed" "https://this-week-in-rust.org/atom.xml" "https://yogthos.net/feed.xml" "https://lambdaisland.com/feeds/episodes.atom" "https://lambdaisland.com/feeds/blog.atom" "http://feeds.cognitect.com/cognicast/feed.rss")))
+ '(package-selected-packages
+   (quote
+    (0blayout 0xc adoc-mode soundklaus soundcloud emms-soundcloud w3 w3m emms-player-mpv emms-player-simple-mpv emms elfeed-goodies elfeed xterm-color typescript-mode tagedit smex simple-httpd rust-playground rainbow-delimiters racer projectile pretty-lambdada paredit nyan-mode names markdown-preview-eww markdown-edit-indirect magit ido-ubiquitous gotest exec-path-from-shell evil darkokai-theme company-ycmd clojure-mode-extra-font-locking cider-decompile ac-cider 4clojure))))
