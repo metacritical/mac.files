@@ -114,6 +114,9 @@
 
     ;; Autocomplete Cider
     ac-cider
+
+    ;;Ascii Doc
+    adoc-mode
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -237,7 +240,4 @@
  ;; If there is more than one, they won't work right.
  '(elfeed-feeds
    (quote
-    ("https://whilo.github.io/feed.xml" "https://charsequence.blogspot.com/feeds/posts/default" "http://feeds.soundcloud.com/users/soundcloud:users:220484243/sounds.rss" "http://www.lispcast.com/feed" "http://mitchellh.com/feed" "http://blog.oleganza.com/rss" "http://thinkrelevance.com/blog/atom.xml" "http://feeds.feedburner.com/RuminationsOfAProgrammer" "http://gigasquidsoftware.com/atom.xml" "https://rails-weekly.ongoodbits.com/feed" "https://this-week-in-rust.org/atom.xml" "https://yogthos.net/feed.xml" "https://lambdaisland.com/feeds/episodes.atom" "https://lambdaisland.com/feeds/blog.atom" "http://feeds.cognitect.com/cognicast/feed.rss")))
- '(package-selected-packages
-   (quote
-    (0blayout 0xc adoc-mode soundklaus soundcloud emms-soundcloud w3 w3m emms-player-mpv emms-player-simple-mpv emms elfeed-goodies elfeed xterm-color typescript-mode tagedit smex simple-httpd rust-playground rainbow-delimiters racer projectile pretty-lambdada paredit nyan-mode names markdown-preview-eww markdown-edit-indirect magit ido-ubiquitous gotest exec-path-from-shell evil darkokai-theme company-ycmd clojure-mode-extra-font-locking cider-decompile ac-cider 4clojure))))
+    ("https://whilo.github.io/feed.xml" "https://charsequence.blogspot.com/feeds/posts/default" "http://feeds.soundcloud.com/users/soundcloud:users:220484243/sounds.rss" "http://www.lispcast.com/feed" "http://mitchellh.com/feed" "http://blog.oleganza.com/rss" "http://thinkrelevance.com/blog/atom.xml" "http://feeds.feedburner.com/RuminationsOfAProgrammer" "http://gigasquidsoftware.com/atom.xml" "https://rails-weekly.ongoodbits.com/feed" "https://this-week-in-rust.org/atom.xml" "https://yogthos.net/feed.xml" "https://lambdaisland.com/feeds/episodes.atom" "https://lambdaisland.com/feeds/blog.atom" "http://feeds.cognitect.com/cognicast/feed.rss"))))
