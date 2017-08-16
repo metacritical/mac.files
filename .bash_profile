@@ -40,6 +40,11 @@ source $OH_MY_BASH/includer.sh
 #BASH Prompt
 source $BASH_LIBS/prompt.sh
 
+#Google API KEY "NO" for chromium
+export GOOGLE_API_KEY="no"
+export GOOGLE_DEFAULT_CLIENT_ID="no"
+export GOOGLE_DEFAULT_CLIENT_SECRET="no"
+
 if [ "$TERM" = dumb ] && [ "$INSIDE_EMACS" ]; then
     export TERM=dumb-emacs-ansi COLORTERM=1
 fi
