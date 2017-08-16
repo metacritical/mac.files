@@ -48,3 +48,4 @@ gits
 .planck_history
 .emacs.d/.cache/
 .emacs.d/eshell/
+.emacs.d/ac-comphist.dat
