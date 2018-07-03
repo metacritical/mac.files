@@ -20,7 +20,7 @@ alias ss='script/server'
 alias sc='script/console'
 alias emacs="brew --prefix emacs-plus | open_brew_emacs"
 alias tmux="TERM=screen-256color-bce tmux"
-alias src='source ~/.bashrc'
+alias src='source ~/.bash_profile'
 alias sbts='a=$(pwd);cd $a'
 #alias rm='rm -i'
 alias :q='exit 0'
@@ -33,8 +33,13 @@ alias cd.='cd ..'
 alias cd..='cd ../../'
 alias cd...='cd ../../../'
 alias cd....='cd ../../../../'
-alias clj="java -cp $OH_MY_BASH/bin/clojure-1.8.0.jar clojure.main"
-alias cljs="java -cp $OH_MY_BASH/bin/cljs.jar:src clojure.main"
+alias cljs="clj -Sdeps '{:deps {org.clojure/clojurescript {:mvn/version \"1.9.946\"}}}' -J--add-modules -Jjava.xml.bind -m cljs.repl.node"
+alias cljrebl='clj -J-Dclojure.server.repl="{:port 3742 :accept clojure.core.server/repl}" -A:rebl'
+alias cljsrebl="clj  -J--add-modules -Jjava.xml.bind -Sdeps '{:deps {github-mfikes/cljs-main-rebel-readline {:git/url \"https://gist.github.com/mfikes/9f13a8e3766d51dcacd352ad9e7b3d1f\" :sha \"27b82ef4b86a70afdc1a2eea3f53ed1562575519\"}}}' -i @setup.clj -m cljs.main"
 alias serve="ruby -run -ehttpd . -p8000"
 alias ls="ls -G"
 alias less="less --RAW-CONTROL-CHARS"
+alias fig="rlwrap lein figwheel"
+alias csi="rlwrap csi"
+alias pg-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
