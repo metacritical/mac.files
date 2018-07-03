@@ -5,13 +5,15 @@
 ;; Define package repositories
 (require 'package)
 
-(add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
-(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+;;Store Packages in custom directory.
+(setq package-user-dir "~/.emacs.d/packages")
+
+;; (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/") t)
+;; (add-to-list 'package-archives '("tromey" . "http://tromey.com/elpa/") t)
 ;; Org-mode's repository
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
-(add-to-list 'package-archives '("tromey" . "http://tromey.com/elpa/") t)
-
 
 
 ;; Load and activate emacs packages. Do this first so that the
@@ -25,36 +27,27 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-
-;; Dont display menubar and scrollbar when in gui mode.
-(menu-bar-mode -1)
-(when (display-graphic-p)
-  (tool-bar-mode -1)
-  (scroll-bar-mode -1))
-
-;;Global Company Mode
-(add-hook 'after-init-hook 'global-company-mode)
-
 ;; The packages you want installed. You can also install these
 ;; manually with M-x package-install
 ;; Add in your own as you wish:
 (defvar my-packages
-  '(;; makes handling lisp expressions much, much easier
-    ;; Cheatsheet: http://www.emacswiki.org/emacs/PareditCheatsheet
+  '(
+    ;; Use package macro
+    use-package
+
+    ;; Makes handling lisp expressions much, much easier
+    ;; Cheatsheet: http://www.emacswiki.org/emacs/PareditCheatsheet.
     paredit
 
-    ;; key bindings and code colorization for Clojure
+    ;; Key bindings and code colorization for Clojure
     ;; https://github.com/clojure-emacs/clojure-mode
     clojure-mode
 
-    ;; extra syntax highlighting for clojure
-    clojure-mode-extra-font-locking
-
-    ;; integration with a Clojure REPL
+    ;; Integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
     cider
 
-    ;; allow ido usage in as many contexts as possible. see
+    ;; Allow ido usage in as many contexts as possible. see
     ;; customizations/navigation.el line 23 for a description
     ;; of ido
     ido-ubiquitous
@@ -62,19 +55,19 @@
     ;; Enhances M-x to allow easier execution of commands. Provides
     ;; a filterable list of possible commands in the minibuffer
     ;; http://www.emacswiki.org/emacs/Smex
-    smex
+    ;; smex
 
-    ;; project navigation
+    ;; Project navigation
     projectile
 
-    ;; colorful parenthesis matching
+    ;; Colorful parenthesis matching
     rainbow-delimiters
 
-    ;; edit html tags like sexps
-    tagedit
+    ;; Edit html tags like sexps
+    ;; tagedit
 
-    ;; git integration
-    magit
+    ;; Git integration
+    ;; magit
 
     ;; Evil Mode
     evil
@@ -82,12 +75,21 @@
     ;; Nyan Mode
     nyan-mode
 
+    ;;Fille Column Indicator
+    fill-column-indicator
+
+    ;;Org Mode
+    org
+
     ;;Org Blog
     ;;org-blog
 
+    ;;Org Bullets - Beautifying the org bullets.
+    org-bullets
+
     ;;Pretty-lambda
     pretty-lambdada
-
+    
     ;;Emacs Edit Server
     ;;edit-server
 
@@ -95,13 +97,19 @@
     ;;tide
 
     ;;Darkokai Theme
-    ;;darkokai-theme 
+    darkokai-theme
 
     ;;Gratuitous Theme
-    ;;gratuitous-dark-theme
+    ;; gratuitous-dark-theme
 
-    ;;Molakai theme
-    ;;molokai-theme
+    ;;Molokai theme
+    ;; molokai-theme
+
+    ;;Twilight Anti bright theme
+    ;; twilight-anti-bright-theme
+    
+    ;;Dracula Theme
+    ;; dracula-theme
 
     ;;company mode
     company
@@ -112,12 +120,58 @@
     ;;Ycmd Company
     ;; company-ycmd
 
-    ;; Autocomplete Cider
-    ac-cider
+    ;; Helm - Autocompletion and narrowing framework.
+    helm
+
+    ;; Helm Cider
+    ;; helm-cider
 
     ;;Ascii Doc
-    adoc-mode
+    ;; adoc-mode
+
+    ;;W3M Browser
+    ;; w3m
+
+    ;; Acejump - Quick jump shortcuts
+    ace-jump-mode
+
+    ;;Avy - Similar to ace jump mode to better
+    avy
+
+    ;;Ranger.el (Ranger like FileManager)
+    ranger
+
+    ;;Racket Mode
+    ;; racket-mode
+
+    ;;Purescript Mode
+    ;; purescript-mode
+
+    ;;Syntax highliting for org mode html export.
+    htmlize
+
+    ;;Custom Startup screen and Dashboard.
+    dashboard
+
+    ;;Ace-window - Switch window like an 'Ace', an ace-jump for Window.
+    ace-window
+
+    ;;nlinum instead of linum-mode because it is faster
+    nlinum
+
+    ;; EDN support
+    edn
+
+    ;;JSON support
+    json-mode
+
+    ;; Org 2 Jekyll
+    org2jekyll 
+
+    ;; Markdown preview Mode
+    markdown-preview-eww
     ))
+
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -129,6 +183,9 @@
 ;; https://github.com/purcell/exec-path-from-shell
 (if (eq system-type 'darwin)
     (add-to-list 'my-packages 'exec-path-from-shell))
+
+;;Copy PATH Environment variable from shell.
+(exec-path-from-shell-copy-envs (list "PATH"))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -143,21 +200,18 @@
 ;;
 ;; (require 'yaml-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-;; 
+;;
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
 ;;;;
-;; Original Elpa
-;;
-
-;; Add a directory to pur load paths
-;;(add-to-list 'load-path "~/.emacs.d/elpa")
 
 
-;;;;
-;; Customization
-;;;;
+
+;;;;;;;;;;;;;;;;;;;;
+;; Customizations ;;
+;;;;;;;;;;;;;;;;;;;;
+
 
 ;; Add a directory to our load path so that when you `load` things
 ;; below, Emacs knows where to look for the corresponding file.
@@ -184,63 +238,52 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
+;; Markdown Mode
+;;
+
 ;; Langauage-specific
-(load "setup-clojure.el")
-;;(load "setup-js.el")
+;; (load "setup-clojure.el")
+;; (load "setup-js.el")
 
 ;;Require Elm mode
-;;(require 'elm-mode)
+;; (require 'elm-mode)
 
 ;; You Complete Me Loader.
 ;; (add-to-list 'load-path "~/.emacs.d/vendor/ycmd/")
 ;; (load "load-ycmd.el")
 
-;;Gnus 
-(setq gnus-select-method '(nntp "news://gnu.emacs.help"))
-(setq gnus-read-active-file nil)
+;;Gnus
+;; (setq gnus-select-method '(nntp "news://gnu.emacs.help"))
+;; (setq gnus-read-active-file nil)
 
 ;;Edit With Emacs Server
 ;;(require 'edit-server)
 ;;(edit-server-start)
 
 ;;org-mode blogging functions.
-(load "org-mode-blog.el")
+;; (require 'org)
+;; (require 'ob-clojure)
+;; (setq org-babel-clojure-backend 'cider)
+;; (require 'cider)
+;; (load "org-mode-blog.el")
 
 ;;Gratuitous dark theme
 ;; (load "~/.emacs.d/elpa/gratuitous-dark-theme-1.3/gratuitous-dark-theme.el")
-
-;;Terminal ansi color.
-(load "~/.emacs.d/elpa/xterm-color-20170102.1525/xterm-color.el")
-(progn (add-hook 'comint-preoutput-filter-functions 'xterm-color-filter)
-       (setq comint-output-filter-functions (remove 'ansi-color-process-output comint-output-filter-functions)))
-(require 'eshell)
-
-(add-hook 'eshell-mode-hook
-          (lambda ()
-            (setq xterm-color-preserve-properties t)))
-
-(add-to-list 'eshell-preoutput-filter-functions 'xterm-color-filter)
-(setq eshell-output-filter-functions (remove 'eshell-handle-ansi-color eshell-output-filter-functions))
-
-
-;; Lein PATH
-(add-to-list 'exec-path "/usr/local/bin/")
-
-
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" default)))
+ '(package-selected-packages
+   (quote
+    (markdown-mode+ markdown-preview-mode helm twilight-anti-bright-theme rainbow-delimiters projectile pretty-lambdada paredit pacmacs org-bullets nyan-mode nlinum molokai-theme magit-popup let-alist htmlize gratuitous-dark-theme git-commit fill-column-indicator exec-path-from-shell evil dracula-theme dashboard darkokai-theme color-theme ace-window ace-jump-mode)))
+ '(send-mail-function (quote sendmail-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(elfeed-feeds
-   (quote
-    ("https://whilo.github.io/feed.xml" "https://charsequence.blogspot.com/feeds/posts/default" "http://feeds.soundcloud.com/users/soundcloud:users:220484243/sounds.rss" "http://www.lispcast.com/feed" "http://mitchellh.com/feed" "http://blog.oleganza.com/rss" "http://thinkrelevance.com/blog/atom.xml" "http://feeds.feedburner.com/RuminationsOfAProgrammer" "http://gigasquidsoftware.com/atom.xml" "https://rails-weekly.ongoodbits.com/feed" "https://this-week-in-rust.org/atom.xml" "https://yogthos.net/feed.xml" "https://lambdaisland.com/feeds/episodes.atom" "https://lambdaisland.com/feeds/blog.atom" "http://feeds.cognitect.com/cognicast/feed.rss")))
- '(package-selected-packages
-   (quote
-    (smooth-scrolling xterm-color typescript-mode tagedit smex simple-httpd rust-playground rainbow-delimiters racer projectile pretty-lambdada paredit nyan-mode names markdown-preview-eww markdown-edit-indirect magit ido-ubiquitous gotest exec-path-from-shell evil deferred darkokai-theme company clojure-mode-extra-font-locking cider-decompile adoc-mode ace-jump-mode ac-cider 4clojure))))

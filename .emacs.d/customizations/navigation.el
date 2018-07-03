@@ -1,4 +1,4 @@
-;; These customizations make it easier for you to navigate files,
+; These customizations make it easier for you to navigate files,
 ;; switch buffers, and choose options from the minibuffer.
 
 
@@ -27,6 +27,7 @@
 ;; you've typed in
 ;; http://www.emacswiki.org/emacs/InteractivelyDoThings
 (ido-mode t)
+(ido-everywhere t)
 
 ;; This allows partial matches, e.g. "tl" will match "Tyrion Lannister"
 (setq ido-enable-flex-matching t)
@@ -44,18 +45,51 @@
 
 ;; This enables ido in all contexts where it could be useful, not just
 ;; for selecting buffer and file names
-(ido-ubiquitous-mode 1)
+;; (require 'ido-completing-read+)
+;; (ido-ubiquitous-mode 1)
 
 ;; Shows a list of buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 
+;; Shows a list of buffers
+(global-set-key (kbd "C-x a") 'ace-jump-mode)
+
+
+;;;;;;;;;;;;;;;
+;; Evil Mode ;;
+;;;;;;;;;;;;;;;
+
+(require 'evil)
+(evil-mode 1)
+
+;;Evil "Leader" Key and bindings.
+(require 'ace-jump-mode)
+(load "./keymap-commons")
+
+(define-key evil-normal-state-map "," evil-window-map)
+(define-key leader-key-map "b" 'ibuffer)
+(define-key evil-normal-state-map "b" 'ibuffer)
+(define-key leader-key-map "j" 'ace-jump-mode)
+(define-key leader-key-map "w" 'ace-window)
+(define-key leader-key-map "d" 'evil-window-delete)
+(define-key leader-key-map ";" 'avy-goto-char)
+(define-key leader-key-map "hf" 'helm-find-files)
+
+;; C-u + Leader + w = Ace window swap!!!
+
+
 ;; Enhances M-x to allow easier execution of commands. Provides
 ;; a filterable list of possible commands in the minibuffer
 ;; http://www.emacswiki.org/emacs/Smex
-(setq smex-save-file (concat user-emacs-directory ".smex-items"))
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
+;; (setq smex-save-file (concat user-emacs-directory ".smex-items"))
+;; (smex-initialize)
+;; (global-set-key (kbd "M-x") 'smex)
 
 ;; projectile everywhere!
 (projectile-global-mode)
+
+;; Helm Mode customizations
+(require 'helm-config)
+(helm-mode 1)
+

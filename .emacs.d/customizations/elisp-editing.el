@@ -15,3 +15,12 @@
 (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
 
 (add-hook 'paredit-mode-hook 'rainbow-delimiters-mode-enable)
+
+;;Yay Rainbows!!!
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+
+;;Global Company Mode
+(add-hook 'after-init-hook 'global-company-mode)
+
+
+
