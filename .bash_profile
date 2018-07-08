@@ -171,3 +171,4 @@ export PATH=/Users/pankajdoharey/.cache/rebar3/bin:$PATH
 
 #SCMBAG
 source ~/.scmbag
+export PATH="/usr/local/opt/ncurses/bin:$PATH"
