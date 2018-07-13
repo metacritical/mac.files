@@ -172,3 +172,6 @@ export PATH=/Users/pankajdoharey/.cache/rebar3/bin:$PATH
 #SCMBAG
 source ~/.scmbag
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="/usr/local/opt/texinfo/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/texinfo/lib"

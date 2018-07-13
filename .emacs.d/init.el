@@ -170,6 +170,12 @@
 
     ;; Markdown preview Mode
     markdown-preview-eww
+
+    ;;org-page Org mode to blog.
+    org-page
+
+    ;;Org Admin
+    blog-admin
     ))
 
 
@@ -238,12 +244,10 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
-;; Markdown Mode
-;;
+;; Org mode blogging using org-page
+(require 'org-page)
 
-;; Langauage-specific
-;; (load "setup-clojure.el")
-;; (load "setup-js.el")
+;; Markdown Mode
 
 ;;Require Elm mode
 ;; (require 'elm-mode)
@@ -269,21 +273,3 @@
 
 ;;Gratuitous dark theme
 ;; (load "~/.emacs.d/elpa/gratuitous-dark-theme-1.3/gratuitous-dark-theme.el")
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" default)))
- '(package-selected-packages
-   (quote
-    (markdown-mode+ markdown-preview-mode helm twilight-anti-bright-theme rainbow-delimiters projectile pretty-lambdada paredit pacmacs org-bullets nyan-mode nlinum molokai-theme magit-popup let-alist htmlize gratuitous-dark-theme git-commit fill-column-indicator exec-path-from-shell evil dracula-theme dashboard darkokai-theme color-theme ace-window ace-jump-mode)))
- '(send-mail-function (quote sendmail-send-it)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
