@@ -1,7 +1,13 @@
 (require 'org-page)
-(setq op/repository-directory "~/Development/metacritical.github.io/")
-(setq op/site-domain "http://selfdotsend.com")
-(setq op/personal-github-link "https://github.com/metacritical")
-(setq op/site-main-title "Self dot send (Computing Blog)")
-(setq op/site-sub-title "Message passing is just a procedure call.")
-(setq op/personal-disqus-shortname "metacritical")
+
+(setq op/repository-directory "~/Development/metacritical.github.io/"
+      op/site-domain "http://selfdotsend.com"
+      op/personal-github-link "https://github.com/metacritical"
+      op/site-main-title "Self dot send (Computing Blog)"
+      op/site-sub-title "Message passing is just a procedure call."
+      op/personal-disqus-shortname "selfdotsend"
+      op/theme-root-directory "~/Development/metacritical.github.io/themes/"
+      op/theme 'kactus
+      op/highlight-render 'htmlize
+      op/repository-org-branch "source"
+      op/repository-html-branch "master")
