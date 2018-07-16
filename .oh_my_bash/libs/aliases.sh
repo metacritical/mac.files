@@ -37,7 +37,7 @@ alias cljs="clj -Sdeps '{:deps {org.clojure/clojurescript {:mvn/version \"1.9.94
 alias cljrebl='clj -J-Dclojure.server.repl="{:port 3742 :accept clojure.core.server/repl}" -A:rebl'
 alias cljsrebl="clj  -J--add-modules -Jjava.xml.bind -Sdeps '{:deps {github-mfikes/cljs-main-rebel-readline {:git/url \"https://gist.github.com/mfikes/9f13a8e3766d51dcacd352ad9e7b3d1f\" :sha \"27b82ef4b86a70afdc1a2eea3f53ed1562575519\"}}}' -i @setup.clj -m cljs.main"
 alias serve="ruby -run -ehttpd . -p8000"
-alias ls="ls -G"
+alias ls="ls --color"
 alias less="less --RAW-CONTROL-CHARS"
 alias fig="rlwrap lein figwheel"
 alias csi="rlwrap csi"

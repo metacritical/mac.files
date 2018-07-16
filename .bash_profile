@@ -7,11 +7,9 @@ export EDITOR='emacs -nw'
 PATH=$PATH:$HOME:~/.oh_my_bash
 
 export CLICOLOR=1
-# export LSCOLORS=BxFxCxDxBxegedabagacad
-# export LSCOLORS=Gxfxcxdxdxegedabagacad
-export LSCOLORS=ExFxCxDxBxegedabagacad
-
-
+export LSCOLORS=BxFxCxDxBxegedabagacad
+#export LSCOLORS=Gxfxcxdxdxegedabagacad
+#export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=4000
@@ -58,64 +56,6 @@ export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
-#SCM Breeze
-[ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
-
-#Google Android tools
-export PATH=$PATH:~/.nexustools
-
-#LLVM Path
-export TERM=xterm-256color
-
-PATH=$PATH:$HOME:$OH_MY_BASH
-
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=4000
-HISTFILESIZE=8000
-
-export TERM="xterm-color"
-
-
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH"
-
-#source $HOME/.cargo/env
-
-#Go Path , Go ROOT Settings
-export GOROOT="/usr/local/opt/go/libexec"
-export GOPATH="/Users/pankajdoharey/Development/go"
-export PATH="$GOPATH/bin:$PATH"
-
-#Custom Scipts Folder
-export OH_MY_BASH=$HOME/.oh_my_bash
-
-#Bash Scripts Includer
-source $OH_MY_BASH/includer.sh
-
-#BASH Prompt
-source $BASH_LIBS/prompt.sh
-
-#Google API KEY "NO" for chromium
-export GOOGLE_API_KEY="no"
-export GOOGLE_DEFAULT_CLIENT_ID="no"
-export GOOGLE_DEFAULT_CLIENT_SECRET="no"
-
-if [ "$TERM" = dumb ] && [ "$INSIDE_EMACS" ]; then
-    export TERM=dumb-emacs-ansi COLORTERM=1
-fi
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
-
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
-#SCM Breeze
-[ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
-
-#Google Android tools
-export PATH=$PATH:~/.nexustools
-
 #LLVM Path
 export LLVM_CONFIG="/usr/local/opt/llvm/bin"
 
@@ -140,9 +80,6 @@ export hlatemp="/tmp"
 #RBENV 
 eval "$(rbenv init -)"
 
-#NEXUS TOOLS
-export PATH=$PATH:~/.nexustools
-
 # ANTLR
 #export CLASSPATH=".:/antlr-4.7.1.jar:$CLASSPATH"
 alias antlr4='java -jar $OH_MY_BASH/bin/antlr.jar'
@@ -154,6 +91,9 @@ export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
 
 #JHBUILD For GTK
 export PATH="~/.local/bin:$PATH"
+
+# Android Platform Tools
+export PATH="~/Development/platform-tools/:$PATH"
 
 #Clojure BOOT
 BOOT_VERSION=2.7.2
@@ -170,8 +110,12 @@ export PATH="$GRAALVM_HOME/bin:$PATH"
 export PATH=/Users/pankajdoharey/.cache/rebar3/bin:$PATH
 
 #SCMBAG
-source ~/.scmbag
+[ -s ~/.scmbag ] && source ~/.scmbag
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/texinfo/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/texinfo/lib"
+export PATH="/usr/local/opt/m4/bin:$PATH"
+export PATH="/usr/local/opt/flex/bin:$PATH"
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
