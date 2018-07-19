@@ -15,13 +15,6 @@ export LSCOLORS=BxFxCxDxBxegedabagacad
 HISTSIZE=4000
 HISTFILESIZE=8000
 
-export TERM="xterm-color"
-
-
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
-export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH"
-
 #LLVM
 export PATH="/usr/local/Cellar/llvm/6.0.0/bin:$PATH"
 
@@ -103,8 +96,8 @@ BOOT_CLOJURE_NAME=org.clojure/clojure
 export PATH=/Users/pankajdoharey/.local/bin:$PATH
 
 #GraalVM
-export GRAALVM_HOME=/Users/$(whoami)/Development/GraalVM/graalvm-1.0.0-rc1/Contents/Home
-export PATH="$GRAALVM_HOME/bin:$PATH"
+# export GRAALVM_HOME=/Users/$(whoami)/Development/GraalVM/graalvm-1.0.0-rc1/Contents/Home
+# export PATH="$GRAALVM_HOME/bin:$PATH"
 
 #Rebar 3 Install for compiling clojerl.
 export PATH=/Users/pankajdoharey/.cache/rebar3/bin:$PATH
@@ -119,3 +112,8 @@ export PATH="/usr/local/opt/m4/bin:$PATH"
 export PATH="/usr/local/opt/flex/bin:$PATH"
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+
+# ARM gcc-arm-none-eabi-7
+export PATH="/Users/pankajdoharey/Development/gcc-arm-none-eabi-7-2018/bin:$PATH"
+
