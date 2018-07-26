@@ -3,15 +3,14 @@
 ;;;;
 
 ;; Enable paredit for Clojure
-(add-hook 'clojure-mode-hook 'enable-paredit-mode)
+;; (add-hook 'clojure-mode-hook 'enable-paredit-mode)
 
+;; A little more syntax highlighting
+;; (require 'clojure-mode-extra-font-locking)
 
 ;; This is useful for working with camel-case tokens, like names of
 ;; Java classes (e.g. JavaClassName)
 (add-hook 'clojure-mode-hook 'subword-mode)
-
-;; A little more syntax highlighting
-(require 'clojure-mode-extra-font-locking)
 
 ;; syntax hilighting for midje
 (add-hook 'clojure-mode-hook
@@ -47,7 +46,7 @@
 (setq cider-repl-wrap-history t)
 
 ;; enable paredit in your REPL
-(add-hook 'cider-repl-mode-hook 'paredit-mode)
+;; (add-hook 'cider-repl-mode-hook 'paredit-mode)
 
 ;; Use clojure mode for other extensions
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
@@ -88,3 +87,18 @@
 
 (add-hook 'clojure-mode-hook 'auto-complete-mode)
 (add-hook 'clojure-mode-hook 'cider-mode)
+
+
+;; Always start smartparens mode in clojure mode.
+(add-hook 'clojure-mode-hook 'smartparens-mode)
+;; (add-hook 'paredit-mode-hook 'rainbow-delimiters-mode-enable)
+
+;;Rainbow delimiters in cider.
+(add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
+
+;; Smartparens in cider repl mode.
+(add-hook 'cider-repl-mode-hook 'smartparens-strict-mode)
+
+;;Yay Rainbows!!!
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+

@@ -1,7 +1,7 @@
 (require 'org-page)
 
 (setq op/repository-directory "~/Development/metacritical.github.io/"
-      op/site-domain "http://selfdotsend.com"
+      op/site-domain "https://selfdotsend.com"
       op/personal-github-link "https://github.com/metacritical"
       op/site-main-title "Self dot send (Computing Blog)"
       op/site-sub-title "Message passing is just a procedure call."

@@ -27,6 +27,9 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+(unless (package-installed-p 'exec-path-from-shell)
+  (package-install 'exec-path-from-shell))
+
 ;; The packages you want installed. You can also install these
 ;; manually with M-x package-install
 ;; Add in your own as you wish:
@@ -37,7 +40,11 @@
 
     ;; Makes handling lisp expressions much, much easier
     ;; Cheatsheet: http://www.emacswiki.org/emacs/PareditCheatsheet.
-    paredit
+    ;;paredit
+
+    ;;smartparens is an excellent alternative to paredit. 
+     smartparens
+     evil-smartparens
 
     ;; Key bindings and code colorization for Clojure
     ;; https://github.com/clojure-emacs/clojure-mode
@@ -244,6 +251,9 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
+;; For editing lisps
+(load "setup-clojure.el")
+
 ;; Org mode blogging using org-page
 (load "blogging.el")
 
@@ -281,10 +291,11 @@
  '(op/theme (quote kactus))
  '(package-selected-packages
    (quote
-    (use-package ranger rainbow-delimiters projectile pretty-lambdada paredit org2jekyll org-page org-bullets nyan-mode nlinum markdown-preview-eww json-mode ido-ubiquitous helm fill-column-indicator exec-path-from-shell evil edn dashboard darkokai-theme company cider blog-admin ace-window ace-jump-mode))))
+    (use-package ranger rainbow-delimiters projectile pretty-lambdada org2jekyll org-page org-bullets nyan-mode nlinum markdown-preview-eww json-mode ido-ubiquitous helm fill-column-indicator exec-path-from-shell evil edn dashboard darkokai-theme company cider blog-admin ace-window ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'set-goal-column 'disabled nil)
