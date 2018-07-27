@@ -78,6 +78,9 @@
   (interactive)
   (cider-repl-set-ns "user"))
 
+;;Cider startup shortcut
+(define-key (current-global-map) (kbd "C-c C-j") 'cider-jack-in)
+
 (eval-after-load 'cider
   '(progn
      (define-key clojure-mode-map (kbd "C-c C-v") 'cider-start-http-server)
@@ -91,13 +94,15 @@
 
 ;; Always start smartparens mode in clojure mode.
 (add-hook 'clojure-mode-hook 'smartparens-mode)
+(add-hook 'clojure-repl-mode-hook 'cider-mode)
+(add-hook 'smartparens-enabled-hook #'evil-smartparens-mode)
 ;; (add-hook 'paredit-mode-hook 'rainbow-delimiters-mode-enable)
 
 ;;Rainbow delimiters in cider.
 (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
 
 ;; Smartparens in cider repl mode.
-(add-hook 'cider-repl-mode-hook 'smartparens-strict-mode)
+(add-hook 'cider-repl-mode-hook 'smartparens-mode)
 
 ;;Yay Rainbows!!!
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
