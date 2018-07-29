@@ -40,11 +40,11 @@
 
     ;; Makes handling lisp expressions much, much easier
     ;; Cheatsheet: http://www.emacswiki.org/emacs/PareditCheatsheet.
-    ;;paredit
+    paredit
 
     ;;smartparens is an excellent alternative to paredit. 
-     smartparens
-     evil-smartparens
+    ;; smartparens
+    ;; evil-smartparens
 
     ;; Key bindings and code colorization for Clojure
     ;; https://github.com/clojure-emacs/clojure-mode
@@ -202,6 +202,7 @@
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
+    (package-refresh-contents)
     (package-install p)))
 
 
