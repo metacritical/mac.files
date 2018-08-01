@@ -40,7 +40,10 @@
 
     ;; Makes handling lisp expressions much, much easier
     ;; Cheatsheet: http://www.emacswiki.org/emacs/PareditCheatsheet.
-    paredit
+    ;;paredit
+
+    ;;Parinfer
+    parinfer
 
     ;;smartparens is an excellent alternative to paredit. 
     ;; smartparens

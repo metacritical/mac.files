@@ -117,3 +117,7 @@ PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 # ARM gcc-arm-none-eabi-7
 export PATH="/Users/pankajdoharey/Development/gcc-arm-none-eabi-7-2018/bin:$PATH"
 
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+
+export LDFLAGS="$LDFLAGS:-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib:-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
