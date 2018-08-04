@@ -186,7 +186,10 @@
 
     ;; Golang mode
     go-mode
-    ))
+    
+    ;;Autodis assemble to llvm bitcode when .bc files are opened.
+    autodisass-llvm-bitcode))
+
 
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -260,6 +263,9 @@
 
 ;; Org mode blogging using org-page
 (load "blogging.el")
+
+;;LLVM Highlighting mode
+(load "llvm-mode.el")
 
 ;; Markdown Mode
 
