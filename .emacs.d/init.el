@@ -188,9 +188,10 @@
     go-mode
     
     ;;Autodis assemble to llvm bitcode when .bc files are opened.
-    autodisass-llvm-bitcode))
+    autodisass-llvm-bitcode
 
-
+    ;;Geiser (Scheme Support)
+    geiser))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
