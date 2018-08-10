@@ -179,7 +179,7 @@
     markdown-preview-eww
 
     ;;org-page Org mode to blog.
-    org-page
+    ;;org-page
 
     ;;Org Admin
     blog-admin
@@ -192,6 +192,7 @@
 
     ;;Geiser (Scheme Support)
     geiser))
+
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
