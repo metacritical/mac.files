@@ -1,4 +1,4 @@
-(require 'org-page)
+(require 'aog)
 
 (setq op/repository-directory "~/Development/metacritical.github.io/"
       op/site-domain "https://selfdotsend.com"
