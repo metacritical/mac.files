@@ -11,3 +11,5 @@
       op/highlight-render 'htmlize
       op/repository-org-branch "source"
       op/repository-html-branch "master")
+
+(org-toggle-inline-images)
