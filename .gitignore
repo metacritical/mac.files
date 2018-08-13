@@ -86,3 +86,5 @@ gits
 .gambit_history
 .gemrc
 .haxelib
+.emacs.d/.recentf~
+.emacs.d/ido.last~
