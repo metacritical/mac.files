@@ -45,7 +45,7 @@
     ;;Parinfer
     parinfer
 
-    ;;smartparens is an excellent alternative to paredit. 
+    ;;smartparens is an excellent alternative to paredit.
     ;; smartparens
     ;; evil-smartparens
 
@@ -80,7 +80,7 @@
     ;; magit
 
     ;; Evil Mode
-    evil
+    ;; evil
 
     ;; Nyan Mode
     nyan-mode
@@ -96,7 +96,7 @@
 
     ;;Pretty-lambda
     pretty-lambdada
-    
+
     ;;Emacs Edit Server
     ;;edit-server
 
@@ -114,7 +114,7 @@
 
     ;;Twilight Anti bright theme
     ;; twilight-anti-bright-theme
-    
+
     ;;Dracula Theme
     ;; dracula-theme
 
@@ -173,7 +173,7 @@
     json-mode
 
     ;; Org 2 Jekyll
-    org2jekyll 
+    org2jekyll
 
     ;; Markdown preview Mode
     markdown-preview-eww
@@ -183,12 +183,20 @@
 
     ;; Golang mode
     go-mode
-    
+
     ;;Autodis assemble to llvm bitcode when .bc files are opened.
     autodisass-llvm-bitcode
 
     ;;Geiser (Scheme Support)
-    geiser))
+    geiser
+
+    ;; Extemore mode
+    extempore-mode
+
+    ;;Intel Hex Mode
+    intel-hex-mode))
+
+
 
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -269,6 +277,9 @@
 ;;LLVM Highlighting mode
 (load "llvm-mode.el")
 
+;;Org mode setup.
+(load "org-setup.el")
+
 ;; Markdown Mode
 
 ;;Require Elm mode
@@ -300,10 +311,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(op/theme (quote kactus))
+ '(op/theme 'kactus)
  '(package-selected-packages
-   (quote
-    (use-package ranger rainbow-delimiters projectile pretty-lambdada org2jekyll org-bullets nyan-mode nlinum markdown-preview-eww json-mode ido-ubiquitous helm fill-column-indicator exec-path-from-shell evil edn dashboard darkokai-theme company cider blog-admin ace-window ace-jump-mode))))
+   '(use-package ranger rainbow-delimiters projectile pretty-lambdada org2jekyll org-bullets nyan-mode nlinum markdown-preview-eww json-mode ido-ubiquitous helm fill-column-indicator exec-path-from-shell edn dashboard darkokai-theme company cider blog-admin ace-window ace-jump-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

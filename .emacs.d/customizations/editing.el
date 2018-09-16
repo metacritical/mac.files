@@ -21,7 +21,7 @@
 (defun reload-init-file ()
   "reload your .emacs.d/init.el file without restarting Emacs"
   (interactive)
-  (load-file "~/.emacs/init.el"))
+  (load-file "~/.emacs.d/init.el"))
 
 (defun toggle-comment-on-line ()
   "comment or uncomment current line"

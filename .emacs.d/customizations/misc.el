@@ -11,10 +11,6 @@
 ;; Go straight to scratch buffer on startup
 (setq inhibit-startup-message t)
 
-
-
-
-
 ;; Fix FCI mode related code fontification issue in org mode emacs.
 (defun fci-mode-override-advice (&rest args))
 (advice-add 'org-html-fontify-code :around

@@ -96,7 +96,7 @@ BOOT_CLOJURE_NAME=org.clojure/clojure
 export PATH=/Users/pankajdoharey/.local/bin:$PATH
 
 #GraalVM
-# export GRAALVM_HOME=/Users/$(whoami)/Development/GraalVM/graalvm-1.0.0-rc1/Contents/Home
+# export GRAALVM_HOME=/Users/$(whoami)/Development/GraalVM/graalvm-1.0.0-rc5/Contents/Home
 # export PATH="$GRAALVM_HOME/bin:$PATH"
 
 #Rebar 3 Install for compiling clojerl.
