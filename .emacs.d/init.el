@@ -194,7 +194,13 @@
     extempore-mode
 
     ;;Intel Hex Mode
-    intel-hex-mode))
+    intel-hex-mode
+    
+    ;;Elm MOde
+    elm-mode
+    ))
+    
+    
 
 
 
@@ -311,9 +317,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(op/theme 'kactus)
+ '(op/theme (quote kactus))
  '(package-selected-packages
-   '(use-package ranger rainbow-delimiters projectile pretty-lambdada org2jekyll org-bullets nyan-mode nlinum markdown-preview-eww json-mode ido-ubiquitous helm fill-column-indicator exec-path-from-shell edn dashboard darkokai-theme company cider blog-admin ace-window ace-jump-mode)))
+   (quote
+    (use-package ranger rainbow-delimiters projectile pretty-lambdada org2jekyll org-bullets nyan-mode nlinum markdown-preview-eww json-mode ido-ubiquitous helm fill-column-indicator exec-path-from-shell edn dashboard darkokai-theme company cider blog-admin ace-window ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
