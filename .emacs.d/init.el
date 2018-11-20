@@ -198,12 +198,31 @@
     
     ;;Elm MOde
     elm-mode
+
+    ;;Rust Cargo
+    cargo
+
+    ;;Rust FLycheck
+    flycheck-rust
+    
+    ;;Rust flymake
+    flymake-rust
+
+    ;;Org-babel Rust
+    ob-rust
+    
+    ;;Rust Mode
+    rust-mode
+
+    ;;Rust Development Environment
+    rustic
+
+    ;;Rust Playground
+    rust-playground
+
+    ;;Lsp mode
+    lsp-mode
     ))
-    
-    
-
-
-
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -320,7 +339,7 @@
  '(op/theme (quote kactus))
  '(package-selected-packages
    (quote
-    (use-package ranger rainbow-delimiters projectile pretty-lambdada org2jekyll org-bullets nyan-mode nlinum markdown-preview-eww json-mode ido-ubiquitous helm fill-column-indicator exec-path-from-shell edn dashboard darkokai-theme company cider blog-admin ace-window ace-jump-mode))))
+    (coffee-mode use-package ranger rainbow-delimiters projectile pretty-lambdada org2jekyll org-bullets nyan-mode nlinum markdown-preview-eww json-mode ido-ubiquitous helm fill-column-indicator exec-path-from-shell edn dashboard darkokai-theme company cider blog-admin ace-window ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
