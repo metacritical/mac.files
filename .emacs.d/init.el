@@ -5,6 +5,9 @@
 ;; Define package repositories
 (require 'package)
 
+;; Github
+;; (require 'git)
+
 ;;Store Packages in custom directory.
 (setq package-user-dir "~/.emacs.d/packages")
 
@@ -131,7 +134,7 @@
     helm
 
     ;; Helm Cider
-    ;; helm-cider
+    helm-cider
 
     ;;Ascii Doc
     ;; adoc-mode
@@ -222,6 +225,12 @@
 
     ;;Lsp mode
     lsp-mode
+
+    ;;Speed Type
+    speed-type
+
+    ;;Search with silver searcher in helm
+    helm-ag
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -331,6 +340,18 @@
 
 ;;Gratuitous dark theme
 ;; (load "~/.emacs.d/elpa/gratuitous-dark-theme-1.3/gratuitous-dark-theme.el")
+
+;; Take backups
+(setq
+   backup-by-copying t      ; don't clobber symlinks
+   backup-directory-alist
+    '(("." . "~/.saves/"))    ; don't litter my fs tree
+   delete-old-versions t
+   kept-new-versions 6
+   kept-old-versions 2
+   version-control t)       ; use versioned backups
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

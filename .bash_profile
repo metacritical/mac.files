@@ -122,3 +122,6 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 export LDFLAGS="$LDFLAGS:-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib:-L/usr/local/opt/llvm/lib"
 export CPPFLAGS="-I/usr/local/opt/llvm/include"
 export PATH="/Users/pankajdoharey/.cask/bin:$PATH"
+
+# heroku autocomplete setup
+HEROKU_AC_BASH_SETUP_PATH=/Users/pankajdoharey/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
