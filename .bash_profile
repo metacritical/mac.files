@@ -90,7 +90,7 @@ export PATH="~/Development/platform-tools/:$PATH"
 
 #Clojure BOOT
 BOOT_VERSION=2.7.2
-BOOT_CLOJURE_VERSION=1.8.0
+BOOT_CLOJURE_VERSION=1.10.0
 BOOT_CLOJURE_NAME=org.clojure/clojure
 
 export PATH=/Users/pankajdoharey/.local/bin:$PATH
@@ -98,6 +98,9 @@ export PATH=/Users/pankajdoharey/.local/bin:$PATH
 #GraalVM
 export GRAALVM_HOME=/Users/$(whoami)/Development/GraalVM/graalvm-1.0.0-rc5/Contents/Home
 # export PATH="$GRAALVM_HOME/bin:$PATH"
+
+#Boot JVM Options
+export BOOT_JVM_OPTIONS='--add-modules java.xml.bind'
 
 #Rebar 3 Install for compiling clojerl.
 export PATH=/Users/pankajdoharey/.cache/rebar3/bin:$PATH
@@ -125,3 +128,6 @@ export PATH="/Users/pankajdoharey/.cask/bin:$PATH"
 
 # heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=/Users/pankajdoharey/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
+
+# Haxe Lang/VM
+export HAXE_STD_PATH="/usr/local/lib/haxe/std"
