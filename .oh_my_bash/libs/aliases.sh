@@ -1,6 +1,6 @@
 #Alias List by permissions
 alias _='sudo'
-#alias l='ls -CF --color=auto'
+# alias l='ls -CF --color=auto'
 #alias ls='ls --color=auto'
 #alias la='ls -A --color=auto'
 alias lsv='ls -v --color=auto'
@@ -13,12 +13,12 @@ alias db:seed='rake db:seed'
 alias db:s='rake db:setup'
 alias db:r='rake db:migrate:redo'
 alias rmrf='rm -rf'
-alias ccat='highlight -O xterm256'
+alias ccat='code'
 alias rs='rails server'
 alias rc='rails c'
 alias ss='script/server'
 alias sc='script/console'
-alias emacs="brew --prefix emacs-plus | open_brew_emacs"
+alias emacs="emacs"
 alias tmux="TERM=screen-256color-bce tmux"
 alias src='source ~/.bash_profile'
 alias sbts='a=$(pwd);cd $a'
@@ -38,7 +38,6 @@ alias cljs="clj -m cljs.repl.node"
 alias cljrebl='clj -J-Dclojure.server.repl="{:port 3742 :accept clojure.core.server/repl}" -A:rebl'
 alias cljsrebl="clj  -J--add-modules -Jjava.xml.bind -Sdeps '{:deps {github-mfikes/cljs-main-rebel-readline {:git/url \"https://gist.github.com/mfikes/9f13a8e3766d51dcacd352ad9e7b3d1f\" :sha \"27b82ef4b86a70afdc1a2eea3f53ed1562575519\"}}}' -i @setup.clj -m cljs.main"
 alias serve="ruby -run -ehttpd $ARGV[0] -p8000"
-alias ls="ls --color"
 alias less="less --RAW-CONTROL-CHARS"
 alias fig="rlwrap lein figwheel"
 alias csi="rlwrap csi"

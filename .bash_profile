@@ -4,12 +4,10 @@ export TERM=xterm-256color
 #Setup Default Editor
 export EDITOR='emacs -nw'
 
-PATH=$PATH:$HOME:~/.oh_my_bash
-
 export CLICOLOR=1
-export LSCOLORS=BxFxCxDxBxegedabagacad
-#export LSCOLORS=Gxfxcxdxdxegedabagacad
-#export LSCOLORS=ExFxCxDxBxegedabagacad
+# export LSCOLORS=BxFxCxDxBxegedabagacad
+# export LSCOLORS=Gxfxcxdxdxegedabagacad
+export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=4000
@@ -146,3 +144,32 @@ HEROKU_AC_BASH_SETUP_PATH=/Users/pankajdoharey/Library/Caches/heroku/autocomplet
 
 #SCMBAG 
 source ~/.scmbag
+
+
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl/lib:$LDFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig:$PKG_CONFIG_PATH"
+export LDFLAGS="-L/usr/local/opt/readline/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/readline/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/usr/local/opt/openjdk/include:$CPPFLAGS"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+#Postgresql
+alias pg_start="brew services start postgresql"
+alias pg_stop="brew services stop postgresql"
+
+
+#V Lang
+export PATH="$HOME/Development/v_macos:$PATH"
+
+
+#Aquamacs
+alias aq="/Applications/Aquamacs.app/Contents/MacOS/bin/emacs" 
+[ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"

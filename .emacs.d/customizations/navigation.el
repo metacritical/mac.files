@@ -1,4 +1,4 @@
-; These customizations make it easier for you to navigate files,
+;; These customizations make it easier for you to navigate files,
 ;; switch buffers, and choose options from the minibuffer.
 
 
@@ -27,7 +27,6 @@
 ;; you've typed in
 ;; http://www.emacswiki.org/emacs/InteractivelyDoThings
 (ido-mode t)
-(ido-everywhere t)
 
 ;; This allows partial matches, e.g. "tl" will match "Tyrion Lannister"
 (setq ido-enable-flex-matching t)
@@ -45,104 +44,19 @@
 
 ;; This enables ido in all contexts where it could be useful, not just
 ;; for selecting buffer and file names
-;; (require 'ido-completing-read+)
-;; (ido-ubiquitous-mode 1)
+(ido-ubiquitous-mode t)
+(ido-everywhere t)
 
 ;; Shows a list of buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 
-;; Shows a list of buffers
-(global-set-key (kbd "C-x a") 'ace-jump-mode)
-
-
-;; Move Line
-(defun move-line (n)
-  "Move the current line up or down by N lines."
-  (interactive "p")
-  (setq col (current-column))
-  (beginning-of-line) (setq start (point))
-  (end-of-line) (forward-char) (setq end (point))
-  (let ((line-text (delete-and-extract-region start end)))
-    (forward-line n)
-    (insert line-text)
-    ;; restore point to original column in moved line
-    (forward-line -1)
-    (forward-char col)))
-
-(defun move-line-up (n)
-  "Move the current line up by N lines."
-  (interactive "p")
-  (move-line (if (null n) -1 (- n))))
-
-(defun move-line-down (n)
-  "Move the current line down by N lines."
-  (interactive "p")
-  (move-line (if (null n) 1 n)))
-
-(global-set-key (kbd "M-p") 'move-line-up)
-(global-set-key (kbd "M-n") 'move-line-down)
-
-;; Move Region
-
-(defun move-region (start end n)
-  "Move the current region up or down by N lines."
-  (interactive "r\np")
-  (let ((line-text (delete-and-extract-region start end)))
-    (forward-line n)
-    (let ((start (point)))
-      (insert line-text)
-      (setq deactivate-mark nil)
-      (set-mark start))))
-
-(defun move-region-up (start end n)
-  "Move the current line up by N lines."
-  (interactive "r\np")
-  (move-region start end (if (null n) -1 (- n))))
-
-(defun move-region-down (start end n)
-  "Move the current line down by N lines."
-  (interactive "r\np")
-  (move-region start end (if (null n) 1 n)))
-
-(global-set-key (kbd "M-S-p") 'move-region-up)
-(global-set-key (kbd "M-S-n") 'move-region-down)
-
-
-;;;;;;;;;;;;;;;
-;; Evil Mode ;;
-;;;;;;;;;;;;;;;
-
-(require 'evil)
-(evil-mode 1)
-
-;;Evil "Leader" Key and bindings.
-(require 'ace-jump-mode)
-(load "./keymap-commons")
-
-(define-key evil-normal-state-map "," evil-window-map)
-(define-key leader-key-map "b" 'ibuffer)
-(define-key evil-normal-state-map "b" 'ibuffer)
-(define-key leader-key-map "j" 'ace-jump-mode)
-(define-key leader-key-map "w" 'ace-window)
-(define-key leader-key-map "d" 'evil-window-delete)
-(define-key leader-key-map ";" 'avy-goto-char)
-(define-key leader-key-map "hf" 'helm-find-files)
-
-;; C-u + Leader + w = Ace window swap!!!
-
-
 ;; Enhances M-x to allow easier execution of commands. Provides
 ;; a filterable list of possible commands in the minibuffer
 ;; http://www.emacswiki.org/emacs/Smex
-;; (setq smex-save-file (concat user-emacs-directory ".smex-items"))
-;; (smex-initialize)
-;; (global-set-key (kbd "M-x") 'smex)
+(setq smex-save-file (concat user-emacs-directory ".smex-items"))
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
 
 ;; projectile everywhere!
 (projectile-global-mode)
-
-;; Helm Mode customizations
-(require 'helm-config)
-(helm-mode 1)
-
