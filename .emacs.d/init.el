@@ -107,7 +107,7 @@
     ;;tide
 
     ;;Darkokai Theme
-    darkokai-theme
+    ;; darkokai-theme
 
     ;;Gratuitous Theme
     ;; gratuitous-dark-theme
@@ -117,6 +117,9 @@
 
     ;;Twilight Anti bright theme
     ;; twilight-anti-bright-theme
+
+    ;;Monokai Emacs Theme
+    monokai-theme
 
     ;;Dracula Theme
     ;; dracula-theme
@@ -231,6 +234,21 @@
 
     ;;Search with silver searcher in helm
     helm-ag
+
+    ;;JSX Mode
+    rjsx-mode
+
+    ;;Neo tree (File tree view)
+    neotree
+
+    ;;Origami (Code folding support)
+    origami
+
+    ;;Omni Sharp - (C# Support)
+    omnisharp
+
+    ;;MU4E Email search.
+    evil-mu4e
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -314,6 +332,12 @@
 ;;Org mode setup.
 (load "org-setup.el")
 
+;;JS, JSX mode and Coffee mode
+(load "setup-js.el")
+
+;;EMAIL and stuff
+(load "email.el")
+
 ;; Markdown Mode
 
 ;;Require Elm mode
@@ -357,10 +381,17 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 2)
+ '(custom-safe-themes
+   (quote
+    ("bd7b7c5df1174796deefce5debc2d976b264585d51852c962362be83932873d9" default)))
  '(op/theme (quote kactus))
  '(package-selected-packages
    (quote
-    (coffee-mode use-package ranger rainbow-delimiters projectile pretty-lambdada org2jekyll org-bullets nyan-mode nlinum markdown-preview-eww json-mode ido-ubiquitous helm fill-column-indicator exec-path-from-shell edn dashboard darkokai-theme company cider blog-admin ace-window ace-jump-mode))))
+    (coffee-mode use-package ranger rainbow-delimiters projectile pretty-lambdada org2jekyll org-bullets nyan-mode nlinum markdown-preview-eww json-mode ido-ubiquitous helm fill-column-indicator exec-path-from-shell edn dashboard darkokai-theme company cider blog-admin ace-window ace-jump-mode)))
+ '(send-mail-function (quote smtpmail-send-it))
+ '(show-trailing-whitespace t)
+ '(smtpmail-smtp-server "mail.google.com"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

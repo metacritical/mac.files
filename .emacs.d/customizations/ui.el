@@ -22,14 +22,12 @@
 ;;Hide scrollbar in gui mode.
 (when (display-graphic-p)
   (tool-bar-mode -1)
-  (scroll-bar-mode -1))
+  (scroll-bar-mode -1)
+  (toggle-frame-maximized)
+  (menu-bar-mode -1))
 
 ;;(toggle-scroll-bar -1)
-(toggle-frame-maximized)
 ;;(toggle-frame-fullscreen)
-
-;; Turn off the menu bar at the top of each frame because it's distracting
-(menu-bar-mode -1)
 
 ;; Show line numbers
 (global-nlinum-mode)
@@ -131,4 +129,9 @@
 
 ;; Word Wrap
 (global-visual-line-mode t)
+
+;;Neotree
+(add-to-list 'load-path "~/Development/")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
 

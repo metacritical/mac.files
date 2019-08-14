@@ -25,6 +25,7 @@ export GOROOT="/usr/local/opt/go/libexec"
 export GOPATH="/Users/pankajdoharey/Development/go"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOPATH/bin:$PATH"
+export CGO_CFLAGS="-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
 
 #Custom Scipts Folder
 export OH_MY_BASH=$HOME/.oh_my_bash
@@ -62,6 +63,13 @@ export PKG_CONFIG_PATH="/usr/local/Cellar/glib/2.54.3/lib/pkgconfig:$PKG_CONFIG_
 #LibVTE
 export PKG_CONFIG_PATH="/usr/local/Cellar/vte3/0.50.2/lib/pkgconfig:$PKG_CONFIG_PATH"
 
+#MONO
+# export PATH="/usr/local/Cellar/mono/6.0.0.313/bin:$PATH"
+# export PKG_CONFIG_PATH="/usr/local/Cellar/mono/6.0.0.313/lib/pkgconfig/:$PKG_CONFIG_PATH"
+export MONO_GAC_PREFIX="/usr/local"
+export CLOJURE_LOAD_PATH=$HOME/Projects/clojure-clr/bin/4.0/Release
+
+
 #HLA (High Level Assembler)
 export HLA_HOME="$HOME/Development/hla"
 export hlalib="$HLA_HOME/hlalib"
@@ -96,8 +104,11 @@ BOOT_CLOJURE_NAME=org.clojure/clojure
 export PATH=/Users/pankajdoharey/.local/bin:$PATH
 
 #GraalVM
-export GRAALVM_HOME=/Users/$(whoami)/Development/GraalVM/graalvm-1.0.0-rc5/Contents/Home
+# export GRAALVM_HOME=/Users/$(whoami)/Development/GraalVM/graalvm-ce-19.0.0/Contents/Home
 # export PATH="$GRAALVM_HOME/bin:$PATH"
+
+#JVM
+export PATH=/Users/$(whoami)/Development/jdk8u212-b04/Contents/Home/bin:$PATH
 
 #Boot JVM Options
 export BOOT_JVM_OPTIONS='--add-modules java.xml.bind'
@@ -105,8 +116,6 @@ export BOOT_JVM_OPTIONS='--add-modules java.xml.bind'
 #Rebar 3 Install for compiling clojerl.
 export PATH=/Users/pankajdoharey/.cache/rebar3/bin:$PATH
 
-#SCMBAG
-[ -s ~/.scmbag ] && source ~/.scmbag
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="/usr/local/opt/texinfo/bin:$PATH"
@@ -115,7 +124,6 @@ export PATH="/usr/local/opt/m4/bin:$PATH"
 export PATH="/usr/local/opt/flex/bin:$PATH"
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-
 
 # ARM gcc-arm-none-eabi-7
 export PATH="/Users/pankajdoharey/Development/gcc-arm-none-eabi-7-2018/bin:$PATH"
@@ -131,3 +139,10 @@ HEROKU_AC_BASH_SETUP_PATH=/Users/pankajdoharey/Library/Caches/heroku/autocomplet
 
 # Haxe Lang/VM
 export HAXE_STD_PATH="/usr/local/lib/haxe/std"
+
+# heroku autocomplete setup
+HEROKU_AC_BASH_SETUP_PATH=/Users/pankajdoharey/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
+
+
+#SCMBAG 
+source ~/.scmbag
