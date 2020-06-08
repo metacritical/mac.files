@@ -13,3 +13,8 @@
 (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
+
+;; Use lisp-mode for racket ).rkt) extension.
+(add-to-list 'auto-mode-alist '("\\.rkt$" . scheme-mode))
+
+

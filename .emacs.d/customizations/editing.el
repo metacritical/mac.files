@@ -73,4 +73,9 @@
       (ns-get-selection-internal 'CLIPBOARD)
     (quit nil)))
 
-(setq electric-indent-mode nil)
+;; Auto Indent
+(setq electric-indent-mode t)
+
+;;Company Mode (Auto completion framework)
+(add-hook 'after-init-hook 'global-company-mode)
+

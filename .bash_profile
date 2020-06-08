@@ -171,5 +171,10 @@ export PATH="$HOME/Development/v_macos:$PATH"
 
 
 #Aquamacs
-alias aq="/Applications/Aquamacs.app/Contents/MacOS/bin/emacs" 
-[ -s "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh" ] && source "/Users/pankajdoharey/.scm_breeze/scm_breeze.sh"
+alias emacs="/Applications/Aquamacs.app/Contents/MacOS/bin/emacs"
+
+#Rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
+#Chez Scheme Libs
+export CHEZSCHEMELIBDIRS="$HOME/Development/thunderchez/:$PATH"

@@ -12,13 +12,12 @@
 ;;Store Packages in custom directory.
 (setq package-user-dir "~/.emacs.d/packages/")
 
-
-;; (add-to-list 'package-archives
-             ;; '("tromey" . "http://tromey.com/elpa/") t)
 (add-to-list 'package-archives
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 (add-to-list 'package-archives 
              '("marmalade" . "https://marmalade-repo.org/packages/") t)
+;; (add-to-list 'package-archives
+             ;; '("tromey" . "http://tromey.com/elpa/") t)
 
 (add-to-list 'package-pinned-packages '(cider . "melpa-stable") t)
 (add-to-list 'package-pinned-packages '(magit . "melpa-stable") t)
@@ -105,6 +104,20 @@
     ;;Inf-Ruby
     inf-ruby
 
+    ;;EMMS
+    emms
+
+    ;;web-mode for erb etcc...
+    web-mode
+
+    ;; Haxe Code completion Mode
+    battle-haxe
+
+    ;; Haxe Major Mode
+    haxe-mode
+
+    ;; Use Package
+    use-package
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -121,6 +134,11 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
+
+
+;; Load Use package
+(require 'use-package)
+
 
 
 ;; Place downloaded elisp files in ~/.emacs.d/vendor. You'll then be able
@@ -173,6 +191,15 @@
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
+(load "haxe-editing.el")
+
+;; EMMS Config
+(load "emms-setup.el")
+
+;; Web Editing mode
+;;(load "web-mode")
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

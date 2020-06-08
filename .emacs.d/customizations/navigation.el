@@ -60,3 +60,6 @@
 
 ;; projectile everywhere!
 (projectile-global-mode)
+
+;;HELM Mode
+(require 'helm-config)
