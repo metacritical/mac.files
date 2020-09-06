@@ -177,4 +177,7 @@ alias emacs="/Applications/Aquamacs.app/Contents/MacOS/bin/emacs"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 #Chez Scheme Libs
-export CHEZSCHEMELIBDIRS="$HOME/Development/thunderchez/:$PATH"
+#export CHEZSCHEMELIBDIRS="$HOME/Development/thunderchez/:$PATH"
+
+#Evil Binary Scheme Libs
+#source "$HOME/Development/scheme-lib/bin/env.sh"

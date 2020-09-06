@@ -36,15 +36,12 @@ Public/
 .clojerl_history
 .clojure/
 .clojure_history
-.clojure_history-13947.tmp
-.clojure_history-72909.tmp
 .cmake/
 .cocoapods/
 .collage/
 .config/
 .cpan/
 .csi_history
-.csi_history-44779.tmp
 .cups/
 .dbshell
 .dotnet/
@@ -69,10 +66,6 @@ Public/
 .ipfs/
 .irb_history
 .jets/
-.jhbuildrc-cfw-10.4
-.jhbuildrc-cfw-10.4u
-.jhbuildrc-custom
-.jhbuildrc-fw-10.4
 .lein/
 .lein_history
 .lesshst
@@ -113,7 +106,6 @@ Public/
 .rbenv/
 .react-native-cli/
 .rebel_readline_history
-.repl-0.0.95431560693/
 .rnd
 .rustup/
 .saves/
@@ -136,3 +128,4 @@ Public/
 .emacs.d/bookmarks
 .emacs.d/emms/history
 .scm_breeze/
+.yarnrc
