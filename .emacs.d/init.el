@@ -118,6 +118,9 @@
 
     ;; Use Package
     use-package
+
+    ;; Slim Mode
+    slim-mode
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
